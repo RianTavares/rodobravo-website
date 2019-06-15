@@ -1,3 +1,2 @@
-web: npm run client
 server: npm start
 

@@ -1,9 +1,13 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
-const routes = require('./src/routes/routes');
 const port = process.env.port || 5000;
 
-app.use('/', routes());
-app.listen(port);
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-console.log(`Listening on port ${port}`);
+app.get('/api/mensagem', (req, res) => {
+  res.send({ express: 'Hello From Express' });
+});
+
+app.listen(port, () => console.log(`Listening on port ${port}`));

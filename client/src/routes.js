@@ -1,17 +1,16 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-
-import Home from "./pages/Home";
-import Rastreio from "./pages/Rastreio";
-
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import List from './pages/List';
 
 const Routes = () => (
-  <BrowserRouter>
+    <div>
     <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/rastreio" component={Rastreio} />
+        <Route exact path='/' component={Home}/>
+        <Route path='/list' component={List}/>
     </Switch>
-  </BrowserRouter>
-);
+    </div>
+)
 
 export default Routes;

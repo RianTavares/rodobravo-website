@@ -1,35 +1,20 @@
 import React, { Component } from 'react';
-import './styles.css';
+import { Link } from 'react-router-dom';
+
 
 class Home extends Component {
-    state = {
-      response: ''
-    };
-  
-    componentDidMount() {
-      this.callApi()
-        .then(res => this.setState({ response: res.express }))
-        .catch(err => console.log(err));
-    }
-  
-    callApi = async () => {
-      const response = await fetch('/');
-      const body = await response.json();
-      if (response.status !== 200) throw Error(body.message);
-  
-      return body;
-    };
-  
-    render() {
-      return (
-        <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Welcome to HOME</h1>
-          </header>
-          <p className="App-intro">{this.state.response}</p>
-        </div>
-      );
-    }
+  render() {
+    return (
+    <div className="App">
+      <h1>Project Home</h1>
+      {/* Link to List.js */}
+      <Link to={'./list'}>
+        <button variant="raised">
+            My List
+        </button>
+      </Link>
+    </div>
+    );
   }
-
-  export default Home;
+}
+export default Home;

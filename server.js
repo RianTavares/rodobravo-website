@@ -6,7 +6,7 @@ const port = process.env.port || 5000;
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get('/api/mensagem', (req, res) => {
+app.get('/', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 

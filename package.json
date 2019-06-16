@@ -2,7 +2,7 @@
   "name": "node-react",
   "version": "1.0.0",
   "scripts": {
-    "client": "cd client && npm install && npm start",
+    "client": "cd client && npm start",
     "server": "node server.js",
     "start": "node server",
     "heroku-postbuild": "cd client && npm install && npm run build",

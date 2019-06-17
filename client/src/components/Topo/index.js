@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
@@ -43,7 +42,7 @@ export default function HideAppBar(props) {
                 <Menu className="menu-item__menu"/>
               </div>
               <div className="menu-logo">
-                <img className="menu-logo__logo" src={Logo} />
+                <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />
             </div>
             <div className="menu-desk">
               <NavLink exact className='menu-desk__item' to='/' activeClassName="underline">INÍCIO</NavLink>

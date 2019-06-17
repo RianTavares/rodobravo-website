@@ -1,0 +1,65 @@
+@import "../../conf.scss";
+
+.menu-item {
+    &__menu {
+        color: #00449C;
+        font-size: 2rem !important;
+
+        @media #{$BREAKPOINT-TABLET-LAND} {
+            display: none !important;
+        }
+    }
+}
+
+.menu-logo {
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        margin: 0 150px 0 128px;
+    }
+    &__logo {
+        margin: 10px auto 10px auto;
+        width: 139px;
+        margin-right: 25px;
+    }
+}
+
+.menu-desk {
+    display: none; 
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        font-family:"rival-sans";
+        display: block;
+        *{
+            color: #000 !important;
+            text-decoration: none !important;
+            margin-left: 15px;
+        }
+
+    }
+
+    &__item:active, &__item:hover { 
+        text-decoration: underline !important;
+      } 
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+.div-empty {
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        display: none;
+    }
+}
+
+.MuiAppBar-colorPrimary {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+.MuiToolbar-root {
+    justify-content: space-between;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        justify-content: left;
+    }
+}

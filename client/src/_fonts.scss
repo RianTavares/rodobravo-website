@@ -1,11 +1,50 @@
-
+@font-face {
+    font-family: 'Rival-Sans-Bold';
+    src: url('./fonts/RivalSans-Bold.eot');
+    src: url('./fonts/RivalSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RivalSans-Bold.woff2') format('woff2'),
+        url('./fonts/RivalSans-Bold.woff') format('woff'),
+        url('./fonts/RivalSans-Bold.ttf') format('truetype'),
+        url('./fonts/RivalSans-Bold.svg#RivalSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
-    font-family:"rival-sans";
-    src:
-    url("./fonts/rival-sans-woff2") format("woff2"),
-    url("./fonts/rival-sans-woff.woff") format("woff"),
-    url("./fonts/rival-sans-openType") format("opentype");
-    font-style:normal;
-    font-weight:100;
-    }
+    font-family: 'Rival-Sans-ExtraLight';
+    src: url('./fonts/RivalSans-ExtraLight.eot');
+    src: url('./fonts/RivalSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RivalSans-ExtraLight.woff2') format('woff2'),
+        url('./fonts/RivalSans-ExtraLight.woff') format('woff'),
+        url('./fonts/RivalSans-ExtraLight.ttf') format('truetype'),
+        url('./fonts/RivalSans-ExtraLight.svg#RivalSans-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rival-Sans-Regular';
+    src: url('./fonts/RivalSans-Regular.eot');
+    src: url('./fonts/RivalSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RivalSans-Regular.woff2') format('woff2'),
+        url('./fonts/RivalSans-Regular.woff') format('woff'),
+        url('./fonts/RivalSans-Regular.ttf') format('truetype'),
+        url('./fonts/RivalSans-Regular.svg#RivalSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rival-Sans-Thinitalic';
+    src: url('./fonts/RivalSans-Thinitalic.eot');
+    src: url('./fonts/RivalSans-Thinitalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RivalSans-Thinitalic.woff2') format('woff2'),
+        url('./fonts/RivalSans-Thinitalic.woff') format('woff'),
+        url('./fonts/RivalSans-Thinitalic.ttf') format('truetype'),
+        url('./fonts/RivalSans-Thinitalic.svg#RivalSans-Thinitalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+

@@ -23,16 +23,16 @@ export default function Footer() {
             <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
           </div>
         </div>
-        <Button variant="contained" className="contact-button">
-          FALE CONOSCO
-        </Button>
+        <div className="footer__button">
+          <button variant="contained" className="footer__button__contact"> FALE CONOSCO </button>
+        </div>
         <div className="footer__divider">
           <hr className="footer__divider__line"/>
         </div>
         <div className="footer__logo">
           <img className="footer__logo__img" src={Logo} alt="Rodobravo Transportes Logo" />
           </div>
-        <span>Copyright 2019 | Desenvolvido por GR Studio</span>
+        <span className="footer__copyright">Copyright 2019 | Desenvolvido por GR Studio </span>
       </footer>
     </React.Fragment>
   );

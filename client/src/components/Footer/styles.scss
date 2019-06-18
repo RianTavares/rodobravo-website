@@ -1,6 +1,6 @@
 .footer {
-    padding: 48px;
-    height: 256px;
+    padding: 25px 0 10px 0;
+    height: 273px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,10 +30,14 @@
             margin-right: 0 !important;
         }
     }
+    
+    &__button {
+        height: 45px;
+        margin: 19px auto 25px auto;
 
-    .contact-button {
-        margin: 19px auto 19px auto;
+        &__contact {
         width: 240px;
+        height: 100%;
         background-color: $DETAILS_BLUE;    
         border-top-color: #707070;
         border-style: outset;
@@ -41,24 +45,37 @@
         border-radius: 6px;
         font-family: rival-sans;
         color: #fff;
+        font-size: 20px;
+        }
+
+        &__contact:hover {
+            background-color: #001C41;
+        }
     }
 
     &__divider {
+        margin: 0 0 10px 0;
         &__line {
             display: block;
             height: 1px;
             border: 0;
             border-top: 1px solid #707070;
-            margin: 0 0 12px 0;
             padding: 0;
             width: 90vw;
         }
     }
 
     &__logo {
+        margin-bottom: 17px;
         &__img {
             width: 143px;
         }
+    }
+
+    &__copyright {
+        width: 85vw;
+        text-align: center;
+        color: #fff;
     }
 }
 

@@ -12,8 +12,10 @@
 }
 
 .menu-logo {
-    @media #{$BREAKPOINT-TABLET-LAND} {
-        margin: 0 150px 0 128px;
+
+
+    @media #{$BREAKPOINT-DESK} {
+        margin: 0 89px 0 117px;
     }
     &__logo {
         margin: 10px auto 10px auto;
@@ -25,8 +27,9 @@
 .menu-desk {
     display: none; 
     @media #{$BREAKPOINT-TABLET-LAND} {
-        font-family:"rival-sans";
+        font-family:"Rival-Sans-Regular";
         display: block;
+        font-size: 22px;
         *{
             color: #000 !important;
             text-decoration: none !important;

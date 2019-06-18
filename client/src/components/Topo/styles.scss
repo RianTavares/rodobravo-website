@@ -2,7 +2,7 @@
 
 .menu-item {
     &__menu {
-        color: #00449C;
+        color: $DETAILS_BLUE;
         font-size: 2rem !important;
 
         @media #{$BREAKPOINT-TABLET-LAND} {

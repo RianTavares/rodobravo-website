@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MenuAppBar from '../../components/Topo'
+import Footer from '../../components/Footer'
 
 class Home extends Component {
   render() {
@@ -23,6 +24,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
           </button>
         </Link>
       </div>
+      <Footer/>
     </React.Fragment>
     );
   }

@@ -1,0 +1,64 @@
+.footer {
+    padding: 48px;
+    height: 256px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $FOOTER_COLOR;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+
+        &__facebook-icon {
+            margin-right: 30px
+        }
+
+        &__instagram-icon {
+            margin-right: 30px
+        }
+
+        &__linkedin-icon {
+            margin-right: 0 !important;
+        }
+    }
+
+    .contact-button {
+        margin: 19px auto 19px auto;
+        width: 240px;
+        background-color: $DETAILS_BLUE;    
+        border-top-color: #707070;
+        border-style: outset;
+        border-width: 1px;
+        border-radius: 6px;
+        font-family: rival-sans;
+        color: #fff;
+    }
+
+    &__divider {
+        &__line {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #707070;
+            margin: 0 0 12px 0;
+            padding: 0;
+            width: 90vw;
+        }
+    }
+
+    &__logo {
+        &__img {
+            width: 143px;
+        }
+    }
+}
+

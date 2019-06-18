@@ -18,6 +18,11 @@
         justify-content: center;
         color: white;
 
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
         &__facebook-icon {
             margin-right: 30px
         }
@@ -43,7 +48,7 @@
         border-style: outset;
         border-width: 1px;
         border-radius: 6px;
-        font-family: rival-sans;
+        font-family: Rival-Sans-Bold;
         color: #fff;
         font-size: 20px;
         }
@@ -76,6 +81,8 @@
         width: 85vw;
         text-align: center;
         color: #fff;
+        font-family: Rival-Sans-ExtraLight;
+        font-size: 15px;
     }
 }
 

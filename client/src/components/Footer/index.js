@@ -14,13 +14,19 @@ export default function Footer() {
       <footer className="footer">
         <div className="footer__social-icons">
           <div className="footer__social-icons__facebook-icon">
-            <FontAwesomeIcon icon={faFacebookF} size="2x" />
+            <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" alt="Facebook Rodobravo Transportes">
+              <FontAwesomeIcon icon={faFacebookF} size="2x" />
+            </a>
           </div>
           <div className="footer__social-icons__instagram-icon">
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
+            <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" alt="Instagram Rodobravo Transportes">
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
           </div>
           <div className="footer__social-icons__linkedin-icon">
-            <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+            <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" alt="Linkedin Rodobravo Transportes">
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+            </a>
           </div>
         </div>
         <div className="footer__button">
@@ -30,7 +36,9 @@ export default function Footer() {
           <hr className="footer__divider__line"/>
         </div>
         <div className="footer__logo">
-          <img className="footer__logo__img" src={Logo} alt="Rodobravo Transportes Logo" />
+          <a href="#" alt="Rodobravo Transportes">
+            <img className="footer__logo__img" src={Logo} alt="Rodobravo Transportes Logo" />
+          </a>
           </div>
         <span className="footer__copyright">Copyright 2019 | Desenvolvido por GR Studio </span>
       </footer>

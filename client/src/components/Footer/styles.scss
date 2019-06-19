@@ -1,3 +1,13 @@
+body{ 
+    height: 100%;
+    position: relative;
+
+    @media #{$BREAKPOINT-TABLET} {
+        height: unset;
+        position: unset;
+    }
+}
+
 .footer {
     padding: 25px 0 10px 0;
     height: 273px;
@@ -10,6 +20,9 @@
     @media #{$BREAKPOINT-TABLET-LAND} {
         height: 350px;
         align-items: unset;
+    }
+
+    @media #{$BREAKPOINT-TABLET}{
         position: absolute;
         bottom: 0;
     }

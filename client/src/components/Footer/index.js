@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import Button from '@material-ui/core/Button';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo-branca.png';
 
 
@@ -40,6 +40,14 @@ export default function Footer() {
             <img className="footer__logo__img" src={Logo} alt="Rodobravo Transportes Logo" />
           </a>
           </div>
+        <section className="footer__menu">
+          <NavLink exact className='footer__menu__item' to='/'>INÍCIO</NavLink>
+          <NavLink exact className='footer__menu__item' to='/rodobravo'>QUEM SOMOS</NavLink>
+          <NavLink exact className='footer__menu__item' to='/frota'>FROTA</NavLink>
+          <NavLink exact className='footer__menu__item' to='/rastreio'>MONITORAMENTO</NavLink>
+          <NavLink exact className='footer__menu__item' to='/servicos'>SERVIÇOS</NavLink>
+          <NavLink exact className='footer__menu__item' to='/contato'>CONTATO</NavLink>
+        </section>
         <span className="footer__copyright">Copyright 2019 | Desenvolvido por GR Studio </span>
       </footer>
     </React.Fragment>

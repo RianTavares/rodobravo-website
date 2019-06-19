@@ -1,0 +1,6 @@
+.App {
+    padding-bottom: 273px;
+    @media #{$BREAKPOINT-MOBILE-LAND} {
+        padding-bottom: 0;
+    }
+}

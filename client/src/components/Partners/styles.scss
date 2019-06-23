@@ -1,7 +1,9 @@
+@import "../../conf";
+
 .container {
     margin: 0 auto;
     padding: 40px;
-    width: 80%;
+    width: 100%;
     color: #333;
   }
   
@@ -89,18 +91,20 @@
   .slick-vertical .slick-slide {
     height: 180px;
   }
-  .slick-arrow {
-    background-color: grey;
-    /* color: black; */
+  // .slick-arrow {
+    
+  // }
+  // .slick-arrow:hover {
+  // }
+
+  .slick-next:before {
+    color: $BLUE_RODOBRAVO;
   }
-  .slick-arrow:hover {
-    background-color: grey;
+
+  .slick-prev:before {
+    color: $BLUE_RODOBRAVO;
   }
-  /* .slick-prev {
-    z-index: 100;
-    left: 20px !important;
+
+  .slick-dots li.slick-active button:before {
+    color: $BLUE_RODOBRAVO;
   }
-  .slick-next {
-    z-index: 100;
-    right: 20px !important;
-  } */

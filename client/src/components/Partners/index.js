@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "./styles.scss";
-import alegra from "../../assets/alegra.png";
-import assai from "../../assets/assai.png";
-import extra from "../../assets/extra.png";
-import leader from "../../assets/leader.png";
+import alegra from "../../assets/imgs/partners/alegra.png";
+import assai from "../../assets/imgs/partners/assai.png";
+import extra from "../../assets/imgs/partners/extra.png";
+import leader from "../../assets/imgs/partners/leader.png";
 
 const ReactSlickDemo = () => {
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
@@ -17,9 +17,11 @@ const ReactSlickDemo = () => {
     const settings = {
         dots: true,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         speed: 500,
         slidesToShow: deviceWidth >= 975 ? 3 : 1,
-        slidesToScroll: deviceWidth >= 975 ? 3 : 1
+        slidesToScroll: deviceWidth >= 975 ? 1 : 1
       };
 
     return (

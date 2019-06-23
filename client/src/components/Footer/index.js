@@ -4,7 +4,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/logo-branca.png';
+import Logo from '../../assets/imgs/logo-branca.png';
 
 
 

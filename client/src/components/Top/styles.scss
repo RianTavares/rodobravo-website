@@ -12,9 +12,7 @@
 }
 
 .menu-logo {
-    @media #{$BREAKPOINT-DESK} {
-        margin: 0 89px 0 117px;
-    }
+    
     &__logo {
         margin: 10px auto 10px auto;
         width: 139px;
@@ -26,7 +24,7 @@
     display: none; 
     @media #{$BREAKPOINT-TABLET-LAND} {
         width: 100%;
-        text-align: center;
+        text-align: right;
         font-family:"Rival-Sans-Regular";
         display: block;
         font-size: 19px;
@@ -63,6 +61,16 @@
     justify-content: space-between;
 
     @media #{$BREAKPOINT-TABLET-LAND} {
+        max-width: 1000px;
+        width: calc(100% - 30px);
+        margin: 0 auto;
         justify-content: left;
+    }
+}
+
+.MuiToolbar-gutters {
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        padding-left: unset !important;
+        padding-right: unset !important;
     }
 }

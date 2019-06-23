@@ -5,10 +5,25 @@
     }
 
     .site-content{
+        p, .container {
+            max-width: 600px;
+            width: calc(100% - 30px);
+            margin: 0 auto;
+
+            @media #{$BREAKPOINT-TABLET} {
+                max-width: 1000px;
+                width: calc(100% - 30px);
+                margin: 0 auto;
+               
+            }
+        }
+
         @media #{$BREAKPOINT-TABLET} {
             padding-bottom: 350px;
-            max-width: 1000px;
-            margin: 0 auto;
+           
         }
     }
 }
+
+// max-width: 1000px;
+// margin: 0 auto;

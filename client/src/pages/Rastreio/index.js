@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import MenuAppBar from '../../components/Topo'
+import MenuAppBar from '../../components/Top'
 
 class Rastreio extends Component {
   render() {

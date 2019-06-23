@@ -1,53 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "./styles.scss";
-import alegra from '../../assets/alegra.png';
-import assai from '../../assets/assai.png';
-import extra from '../../assets/extra.png';
-import leader from '../../assets/leader.png';
+import alegra from "../../assets/alegra.png";
+import assai from "../../assets/assai.png";
+import extra from "../../assets/extra.png";
+import leader from "../../assets/leader.png";
 
-
-export default class ReactSlickDemo extends React.Component {
-  render() {
-    const settings = {}
-
-    const screen = window.matchMedia("(min-width: 975px)")
-
-    const resize = (screen) => {
-        if(screen.match){
-            const settings = {
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 3,
-                slidesToScroll: 3
-            };
-        } else {
-            const settings = {
-                dots: true,
-                infinite: true,
-                speed: 500,
-            };
-        }
-    }
+const ReactSlickDemo = () => {
+    const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        window.addEventListener('resize', event => {
+            setDeviceWidth(event.target.innerWidth);
+        });
+    },[]);
+    
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: deviceWidth >= 975 ? 3 : 1,
+        slidesToScroll: deviceWidth >= 975 ? 3 : 1
+      };
 
     return (
-      <div className="container">
-        <Slider {...settings}>
-          <div>
-            <img src={alegra}/>
-          </div>
-          <div>
-          <img src={extra}/>
-          </div>
-          <div>
-          <img src={assai}/>
-          </div>
-          <div>
-          <img src={leader}/>
-          </div>
-        </Slider>
-      </div>
-    );
-  }
+        <div className="container">
+          <Slider {...settings}>
+            <div>
+              <img src={alegra} alt='alegra'/>
+            </div>
+            <div>
+              <img src={extra} alt='extra'/>
+            </div>
+            <div>
+              <img src={assai} alt='assai'/>
+            </div>
+            <div>
+              <img src={leader} alt='leader'/>
+            </div>
+          </Slider>
+        </div>
+      );
 }
+
+export default ReactSlickDemo;

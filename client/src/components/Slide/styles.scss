@@ -1,11 +1,9 @@
 @import "../../conf";
 
 .slide {
-  margin-top: 25px;
   
-  @media #{$BREAKPOINT-TABLET-LAND} {
-   margin-top: 17px;
-  }
+  margin-top: 17px;
+  
   .slick-slider {
     margin: unset !important;
   }

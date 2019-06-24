@@ -6,7 +6,7 @@ import assai from "../../assets/imgs/partners/assai.png";
 import extra from "../../assets/imgs/partners/extra.png";
 import leader from "../../assets/imgs/partners/leader.png";
 
-const ReactSlickDemo = () => {
+const PartnersSlide = () => {
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
     useEffect(() => {
         window.addEventListener('resize', event => {
@@ -44,4 +44,4 @@ const ReactSlickDemo = () => {
       );
 }
 
-export default ReactSlickDemo;
+export default PartnersSlide;

@@ -1,0 +1,112 @@
+@import "../../conf";
+
+.slide {
+  margin-top: 25px;
+  
+  @media #{$BREAKPOINT-TABLET-LAND} {
+   margin-top: 17px;
+  }
+  .slick-slider {
+    margin: unset !important;
+  }
+    
+  .slick-dots {
+    margin-left: 0;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $BLUE_RODOBRAVO;
+  }
+
+  .slick-slide img {
+    border: unset !important;
+  }
+
+  .slide-text-flex {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+    .slide-text {
+      position: absolute;
+      top: 200px;
+      color: white;
+      font-family: Rival-Sans-Bold;
+      max-width: 360px;
+      font-size: 12px;
+
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        max-width: 650px;
+        font-size: 20px;
+        top: 143px;
+        text-align: center;
+      }
+    }
+}
+
+  .slide-dots {
+  
+    bottom: -25px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    padding: 0;
+  
+    li.slick-active button:before {
+      color: #00377E;
+      opacity: 1;
+  }
+  
+    li button::before {
+      font-size: 48px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '•';
+      text-align: center;
+      opacity: .25;
+      color: #000;
+    }
+  
+    li button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: 0;
+      background: 0 0;
+  }
+  
+    li {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.slide-gradiente {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent, black 100%);
+  margin-top: -300px;
+  height: 300px;
+  width: 100%;
+  content: '';
+}
+
+

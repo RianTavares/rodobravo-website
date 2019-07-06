@@ -32,25 +32,29 @@
       }
 
       @media #{$BREAKPOINT-TABLET-LAND} {
+        margin-left: 19%;
+      }
+
+      @media #{$BREAKPOINT-DESK} {
         margin-left: 25%;
       }
 
-    .slide-text {
-      position: absolute;
-      top: 200px;
-      color: white;
-      font-family: Rival-Sans-Bold;
-      max-width: 360px;
-      font-size: 12px;
+      .slide-text {
+        position: absolute;
+        top: 200px;
+        color: white;
+        font-family: Rival-Sans-Bold;
+        max-width: 360px;
+        font-size: 12px;
 
-      @media #{$BREAKPOINT-TABLET-LAND} {
-        max-width: 650px;
-        font-size: 20px;
-        top: 143px;
-        text-align: center;
+        @media #{$BREAKPOINT-TABLET-LAND} {
+          max-width: 650px;
+          font-size: 20px;
+          top: 143px;
+          text-align: center;
+        }
       }
     }
-}
 
   .slide-dots {
   

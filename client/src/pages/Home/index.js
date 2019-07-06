@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MenuAppBar from '../../components/Top'
+import MenuAppBar from '../../components/NavBarMenu'
 import Footer from '../../components/Footer'
 import Partners from '../../components/Partners';
 import Slide from '../../components/Slide'; 

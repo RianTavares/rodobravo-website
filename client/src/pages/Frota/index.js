@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import MenuAppBar from '../../components/Top'
+import MenuAppBar from '../../components/NavBarMenu'
 
 class Frota extends Component {
   render() {

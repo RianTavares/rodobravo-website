@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MenuAppBar from '../../components/Top'
+import MenuAppBar from '../../components/NavBarMenu'
 
 class Rodobravo extends Component {
   render() {

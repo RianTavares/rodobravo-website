@@ -21,9 +21,14 @@
   }
 
   .slide-text-flex {
-      display: flex;
-      justify-content: center;
       width: 100%;
+      padding: 0 10px 0 10px;
+
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        margin-left: 20%;
+        width: unset;
+        padding: unset;
+      }
 
     .slide-text {
       position: absolute;

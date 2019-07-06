@@ -24,10 +24,15 @@
       width: 100%;
       padding: 0 10px 0 10px;
 
-      @media #{$BREAKPOINT-TABLET-LAND} {
-        margin-left: 20%;
+      @media #{$BREAKPOINT-TABLET} {
+        margin-left: 25%;
         width: unset;
         padding: unset;
+        text-align: center;
+      }
+
+      @media #{$BREAKPOINT-TABLET-LAND} {
+        margin-left: 25%;
       }
 
     .slide-text {

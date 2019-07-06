@@ -36,7 +36,10 @@
       }
 
       @media #{$BREAKPOINT-DESK} {
-        margin-left: 25%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: unset;
       }
 
       .slide-text {
@@ -44,8 +47,12 @@
         top: 200px;
         color: white;
         font-family: Rival-Sans-Bold;
-        max-width: 360px;
+        max-width: 330px;
         font-size: 12px;
+
+        @media #{$BREAKPOINT-MOBILE-IPHONE-5S} {
+          max-width: 360px;
+        }
 
         @media #{$BREAKPOINT-TABLET-LAND} {
           max-width: 650px;

@@ -36,6 +36,67 @@
     &__link:hover {
         background-color: #050542;
     }
+
+    &__footer {
+        background-color: $FOOTER_COLOR;
+        width: 100%;
+        height: 100vh;
+
+        #icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            
+            .footer__facebook-icon {
+                font-size: 1em;
+            }
+
+            div {
+                margin-right: 30px;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        #footer-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+
+            div {
+                a {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+
+                    svg {
+                    margin-right: 10px;
+                    font-size: .7em;
+                    color: $ITENS_ORANGE;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .footer-info__phone {
+                max-height: 25px;
+            }
+
+            .footer-info__mail {
+                max-height: 25px;
+            }
+
+            .footer-info__map {
+                max-height: 25px;
+            }
+        }
+    }
 }
 
 input#menu-slide:checked ~ div#menu-slide-bar {

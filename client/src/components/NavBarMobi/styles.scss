@@ -1,3 +1,9 @@
+body {
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        overflow: auto !important;
+    }
+}
+
 #menu-slide-bar{
     background-color: #fff;
     height: 100%;
@@ -101,6 +107,10 @@
 
 input#menu-slide:checked ~ div#menu-slide-bar {
     transform: translateX(320px);
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        transform: translateX(-320px);
+    }
 }
 
 #menu-slide {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MenuAppBar from '../../components/NavBarMenu'
+import MenuBarMobi from '../../components/NavBarMobi'
 import Footer from '../../components/Footer'
 import Partners from '../../components/Partners';
 import Slide from '../../components/Slide'; 
@@ -10,6 +11,7 @@ class Home extends Component {
     return (
     <React.Fragment>
       <MenuAppBar/>
+      <MenuBarMobi />
       <section className="App">
         <div className="site-content">
           <Slide />

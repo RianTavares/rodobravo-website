@@ -38,9 +38,11 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-              <div className="menu-item">
+            <div className="menu-item">
+              <label id="icon-slide-check" htmlFor="menu-slide">
                 <Menu className="menu-item__menu"/>
-              </div>
+              </label>
+            </div>
               <div className="menu-logo">
                 <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />
             </div>

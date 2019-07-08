@@ -31,12 +31,12 @@ class NavBarMobi extends Component {
                 <input onClick={this.menuWasClicked} type="checkbox" className="menu-slide" id="menu-slide" />
                 <div className="menu-slide-bar" id="menu-slide-bar">
                   <nav>
-                    <NavLink exact className='menu-slide-bar__link' to='/'>Início</NavLink>
-                    <NavLink exact className='menu-slide-bar__link' to='/'>Quem Somos</NavLink>
-                    <NavLink exact className='menu-slide-bar__link' to='/'>Frota</NavLink>
-                    <NavLink exact className='menu-slide-bar__link' to='/'>Monitoramento</NavLink>
-                    <NavLink exact className='menu-slide-bar__link' to='/'>Serviços</NavLink>
-                    <NavLink exact className='menu-slide-bar__link' to='/'>Contato</NavLink>
+                    <NavLink exact className='menu-slide-bar__link' to='/' activeClassName="underline">Início</NavLink>
+                    <NavLink exact className='menu-slide-bar__link' to='/rodobravo' activeClassName="underline">Quem Somos</NavLink>
+                    <NavLink exact className='menu-slide-bar__link' to='/frota' activeClassName="underline">Frota</NavLink>
+                    <NavLink exact className='menu-slide-bar__link' to='/rastreio' activeClassName="underline">Monitoramento</NavLink>
+                    <NavLink exact className='menu-slide-bar__link' to='/servicos' activeClassName="underline">Serviços</NavLink>
+                    <NavLink exact className='menu-slide-bar__link' to='/contato' activeClassName="underline">Contato</NavLink>
                     <div id="menu-slide-bar__footer">
                       <div id="icons">
                         <div className="footer__facebook-icon">
@@ -69,7 +69,7 @@ class NavBarMobi extends Component {
                         </div>
                         <div className="footer-info__map">
                           <a href="" alt="">
-                            <div><FontAwesomeIcon icon={faMapMarkerAlt} /></div> <div><p>Madre Maria José 21, Pavuna, RJ</p></div>
+                            <div className="slide-menu-map"><FontAwesomeIcon icon={faMapMarkerAlt} /></div> <div><p> Madre Maria José 21, Pavuna, RJ</p></div>
                           </a>
                         </div>
                       </div>

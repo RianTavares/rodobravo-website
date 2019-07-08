@@ -9,7 +9,7 @@ body {
     height: 100%;
     width: 320px;
     position: absolute;
-    transition: all .2s linear;
+    transition: all .3s linear;
     z-index: 1;
     left: -320px;
 
@@ -27,6 +27,10 @@ body {
             font-size: 24px;
             margin-bottom: 18px;
             margin-left: 15px;
+        }
+
+        .slide-bar-active {
+            background-color: $DETAILS_BLUE;
         }
     }
 
@@ -84,6 +88,7 @@ body {
                     }
 
                     p {
+                        font-family: roboto;
                         font-size: 14px;
                         color: #fff;
                     }
@@ -103,10 +108,15 @@ body {
             }
         }
     }
+
+    .slide-menu-map {
+        margin-right: 5px;
+    }
 }
 
 input#menu-slide:checked ~ div#menu-slide-bar {
     transform: translateX(320px);
+    box-shadow: 300px 5px rgba(0,0,0,0.5);
 
     @media #{$BREAKPOINT-TABLET-LAND} {
         transform: translateX(-320px);

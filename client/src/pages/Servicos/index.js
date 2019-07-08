@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MenuAppBar from '../../components/NavBarMenu'
+import MenuBarMobi from '../../components/NavBarMobi'
 
 class Servicos extends Component {
   render() {
     return (
     <React.Fragment>
       <MenuAppBar/>
+      <MenuBarMobi/>
       <div className="App">
         <h1>Serviços</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud rum. exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.

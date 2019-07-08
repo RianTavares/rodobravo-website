@@ -1,42 +1,57 @@
-body {
-    @media #{$BREAKPOINT-TABLET-LAND} {
-        overflow: auto !important;
-    }
+.menu-open {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 #menu-slide-bar{
     background-color: #fff;
     height: 100%;
-    width: 320px;
-    position: absolute;
-    transition: all .3s linear;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    position: fixed;
+    transition: all .5s linear;
     z-index: 1;
-    left: -320px;
+    left: -100vw;
 
     nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
+
+        .menu-slide-bar-itens {
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            position: absolute;
+            background: #fff;
+            width: 80%;
+            max-width: 320px;
+            top: 0;
+            left: 0;
+            padding: 0;
+            bottom: 254px;
+        }
 
         a {
             text-decoration: none;
             color: #000;
             font-family: 'Rival-Sans-Regular';
-            font-size: 24px;
+            font-size: 1.6em;;
             margin-bottom: 18px;
             margin-left: 15px;
         }
-
+        
         .slide-bar-active {
             background-color: $DETAILS_BLUE;
         }
     }
 
+    .inicial {
+        margin-top: 38px;
+    }
+
     &__link {
         padding: 20px;
-        transition: all .2s linear;
+        transition: all .5s linear;
         font-family: Arial;
         font-size: 12px;
         color: #f4f4f9;
@@ -49,37 +64,93 @@ body {
 
     &__footer {
         background-color: $FOOTER_COLOR;
-        width: 100%;
-        height: 100vh;
+        position: absolute;
+        width: 80%;
+        max-width: 320px;
+        bottom: 0;
+        padding-bottom: 0;
+        left: 0;
 
         #icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            
             .footer__facebook-icon {
                 font-size: 1em;
             }
 
-            div {
-                margin-right: 30px;
-            }
+            
 
-            a {
-                color: #fff;
+            .icons-list {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+
+                div {
+                    margin-right: 30px;
+                }
+
+                a {
+                    color: #fff;
+    
+                    svg {
+                        width: 22.04px;
+                        font-size: 1.8em;
+                    }
+                }
             }
+        }
+
+        #icons::after {
+            clear: both;
+            display: block;
+            background: #4a4a4a;
+            height: 1px;
+            margin: 0 13px;
+            content: '.';
+            text-indent: -9999em;
+            overflow: hidden;
         }
 
         #footer-info {
             display: flex;
             flex-direction: column;
-            margin-left: 15px;
+            margin-bottom: 120px;
+
+            .footer-info__button {
+                height: 45px;
+                margin: 25px auto 0 auto;
+
+                .footer-info__button__contact {
+                    width: 180px;
+                    height: 100%;
+                    background-color: $DETAILS_BLUE;
+                    border-radius: 6px;
+                    font-family: Rival-Sans-Bold;
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+
+            .footer-info__divider {
+                margin: 0 0 10px 0;
+                .footer-info__divider__line {
+
+                    display: block;
+                    height: 1px;
+                    border: 0;
+                    border-top: 1px solid #707070;
+                    padding: 0;
+                    width: 80%;
+                    max-width: 200px;
+
+                }
+            }
 
             div {
                 a {
                     align-items: center;
                     display: flex;
                     flex-direction: row;
+                    text-decoration: none;
 
                     svg {
                     margin-right: 10px;
@@ -115,11 +186,10 @@ body {
 }
 
 input#menu-slide:checked ~ div#menu-slide-bar {
-    transform: translateX(320px);
-    box-shadow: 300px 5px rgba(0,0,0,0.5);
+    transform: translateX(100vw);
 
     @media #{$BREAKPOINT-TABLET-LAND} {
-        transform: translateX(-320px);
+        transform: translateX(-100vw);
     }
 }
 

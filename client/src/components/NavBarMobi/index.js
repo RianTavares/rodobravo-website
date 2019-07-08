@@ -12,6 +12,7 @@ class NavBarMobi extends Component {
   constructor(props){
     super(props)
     this.menuWasClicked = this.menuWasClicked.bind(this)
+    this.keepScrolling = this.keepScrolling.bind(this)
   }
 
   menuWasClicked() {
@@ -19,9 +20,15 @@ class NavBarMobi extends Component {
     const check = document.getElementById("menu-slide").checked;
     if (check) {
       body.setAttribute('class', 'menu-open')
+      
     } else {
       body.removeAttribute('class')
     }
+  }
+
+  keepScrolling() {
+    const body = document.body;
+    body.removeAttribute('class')
   }
 
   render () {
@@ -32,12 +39,12 @@ class NavBarMobi extends Component {
                 <div className="menu-slide-bar" id="menu-slide-bar">
                   <nav>
                     <div className="menu-slide-bar-itens">
-                      <NavLink exact className='menu-slide-bar__link inicial' to='/' activeClassName="underline">Início</NavLink>
-                      <NavLink exact className='menu-slide-bar__link' to='/rodobravo' activeClassName="underline">Quem Somos</NavLink>
-                      <NavLink exact className='menu-slide-bar__link' to='/frota' activeClassName="underline">Frota</NavLink>
-                      <NavLink exact className='menu-slide-bar__link' to='/rastreio' activeClassName="underline">Monitoramento</NavLink>
-                      <NavLink exact className='menu-slide-bar__link' to='/servicos' activeClassName="underline">Serviços</NavLink>
-                      <NavLink exact className='menu-slide-bar__link' to='/contato' activeClassName="underline">Contato</NavLink>
+                      <NavLink onClick={this.keepScrolling} exact className='menu-slide-bar__link inicial' to='/' activeClassName="underline">Início</NavLink>
+                      <NavLink onClick={this.keepScrolling} exact className='menu-slide-bar__link' to='/rodobravo' activeClassName="underline">Quem Somos</NavLink>
+                      <NavLink onClick={this.keepScrolling} exact className='menu-slide-bar__link' to='/frota' activeClassName="underline">Frota</NavLink>
+                      <NavLink onClick={this.keepScrolling} exact className='menu-slide-bar__link' to='/rastreio' activeClassName="underline">Monitoramento</NavLink>
+                      <NavLink onClick={this.keepScrolling} exact className='menu-slide-bar__link' to='/servicos' activeClassName="underline">Serviços</NavLink>
+                      <NavLink onClick={this.keepScrolling} exact className='menu-slide-bar__link' to='/contato' activeClassName="underline">Contato</NavLink>
                     </div>
                   </nav>
 

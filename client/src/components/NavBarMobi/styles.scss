@@ -14,6 +14,7 @@
     transition: all .5s linear;
     z-index: 1;
     left: -100vw;
+    top: 0;
 
     nav {
 
@@ -25,7 +26,7 @@
             background: #fff;
             width: 80%;
             max-width: 320px;
-            top: 0;
+            top: 48px;
             left: 0;
             padding: 0;
             bottom: 254px;

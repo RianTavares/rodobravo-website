@@ -4,9 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 class NavBarMobi extends Component {
   constructor(props){
@@ -15,16 +12,32 @@ class NavBarMobi extends Component {
     this.keepScrolling = this.keepScrolling.bind(this)
   }
 
-  menuWasClicked() {
+  menuWasClicked() { 
     const body = document.body;
-    const check = document.getElementById("menu-slide").checked;
-    if (check) {
-      body.setAttribute('class', 'menu-open')
-      
+    let varScroll;
+    
+    if(!body.classList.contains('menu-open')) {
+      varScroll = window.scrollY;
+      body.style.top = '-' + varScroll + 'px';
+      body.dataset.y = varScroll;
+      body.classList.toggle('menu-open');
     } else {
-      body.removeAttribute('class')
+      body.classList.toggle('menu-open');
+      window.scrollTo(0, body.dataset.y);
     }
   }
+
+
+  // menuWasClicked() {
+  //   const body = document.body;
+  //   const check = document.getElementById("menu-slide").checked;
+  //   if (check) {
+  //     body.setAttribute('class', 'menu-open')
+      
+  //   } else {
+  //     body.removeAttribute('class')
+  //   }
+  // }
 
   keepScrolling() {
     const body = document.body;
@@ -70,9 +83,6 @@ class NavBarMobi extends Component {
                       </div>
 
                       <div id="footer-info">
-                        {/* <div className="footer-info__divider">
-                          <hr className="footer-info__divider__line"/>
-                        </div> */}
                         <div className="footer-info__button">
                           <button variant="contained" className="footer-info__button__contact"> FALE CONOSCO </button>
                         </div>

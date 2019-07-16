@@ -20,9 +20,10 @@ class NavBarMobi extends Component {
       varScroll = window.scrollY;
       body.style.top = '-' + varScroll + 'px';
       body.dataset.y = varScroll;
-      body.classList.toggle('menu-open');
+      body.classList.add('menu-open');
     } else {
-      body.classList.toggle('menu-open');
+      body.classList.remove('menu-open');
+      body.style.top = 0;
       window.scrollTo(0, body.dataset.y);
     }
   }

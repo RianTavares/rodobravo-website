@@ -8,37 +8,8 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 class NavBarMobi extends Component {
   constructor(props){
     super(props)
-    this.menuWasClicked = this.menuWasClicked.bind(this)
     this.keepScrolling = this.keepScrolling.bind(this)
   }
-
-  menuWasClicked() { 
-    const body = document.body;
-    let varScroll;
-    
-    if(!body.classList.contains('menu-open')) {
-      varScroll = window.scrollY;
-      body.style.top = '-' + varScroll + 'px';
-      body.dataset.y = varScroll;
-      body.classList.add('menu-open');
-    } else {
-      body.classList.remove('menu-open');
-      body.style.top = 0;
-      window.scrollTo(0, body.dataset.y);
-    }
-  }
-
-
-  // menuWasClicked() {
-  //   const body = document.body;
-  //   const check = document.getElementById("menu-slide").checked;
-  //   if (check) {
-  //     body.setAttribute('class', 'menu-open')
-      
-  //   } else {
-  //     body.removeAttribute('class')
-  //   }
-  // }
 
   keepScrolling() {
     const body = document.body;
@@ -49,7 +20,6 @@ class NavBarMobi extends Component {
 
     return (
       <React.Fragment>
-                <input onClick={this.menuWasClicked} type="checkbox" className="menu-slide" id="menu-slide" />
                 <div className="menu-slide-bar" id="menu-slide-bar">
                   <nav>
                     <div className="menu-slide-bar-itens">

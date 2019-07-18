@@ -3,6 +3,7 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
+    // animation: gira 0.5s linear;
 }
 
 #menu-slide-bar{
@@ -11,10 +12,10 @@
     width: 100%;
     background: rgba(0,0,0,.4);
     position: fixed;
-    transition: all .5s linear;
+    transition: all .2s linear;
     z-index: 1;
     left: -100vw;
-    top: 0;
+    top: 50px;
 
     nav {
 
@@ -26,7 +27,7 @@
             background: #fff;
             width: 80%;
             max-width: 320px;
-            top: 48px;
+            top: 0;
             left: 0;
             padding: 0;
             bottom: 254px;
@@ -36,7 +37,7 @@
             text-decoration: none;
             color: #000;
             font-family: 'Rival-Sans-Regular';
-            font-size: 1.6em;;
+            font-size: 1.3em;;
             margin-bottom: 18px;
             margin-left: 15px;
         }
@@ -47,12 +48,12 @@
     }
 
     .inicial {
-        margin-top: 38px;
+        margin-top: 50px;
     }
 
     &__link {
         padding: 20px;
-        transition: all .5s linear;
+        transition: all .2s linear;
         font-family: Arial;
         font-size: 12px;
         color: #f4f4f9;
@@ -186,17 +187,16 @@
     }
 }
 
-input#menu-slide:checked ~ div#menu-slide-bar {
-    transform: translateX(100vw);
-
+#menu-slide-bar {
     @media #{$BREAKPOINT-TABLET-LAND} {
         transform: translateX(-100vw);
     }
 }
 
+.open-nav-transform {
+    transform: translateX(100vw);
+}
+
 #menu-slide {
-    // top: 87px;
-    // position: absolute;
-    // z-index: 2;
     display: none;
 }

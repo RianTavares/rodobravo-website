@@ -10,6 +10,7 @@ import Menu from '@material-ui/icons/Menu';
 import { NavLink } from 'react-router-dom';
 
 
+
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -24,11 +25,35 @@ function HideOnScroll(props) {
   );
 }
 
+function buttonWasClicked() { 
+  const body = document.body;
+  const button = document.querySelector('.menu-item > button');
+  const slideBar = document.querySelector('#menu-slide-bar');
+  let varScroll;
+
+  if(!body.classList.contains('menu-open')) {
+    varScroll = window.scrollY;
+    body.style.top = '-' + varScroll + 'px';
+    body.dataset.y = varScroll;
+    body.classList.add('menu-open');
+    slideBar.classList.add('open-nav-transform');
+  } else {
+    body.classList.remove('menu-open');
+    slideBar.classList.remove('open-nav-transform');
+    body.style.top = 0;
+    window.scrollTo(0, body.dataset.y);
+  }
+
+  if(!button.classList.contains('open')) {
+    button.classList.add('open');
+  } else {
+    button.classList.remove('open');
+  }
+}
+
+
 HideOnScroll.propTypes = {
-  children: PropTypes.node.isRequired,
-  // Injected by the documentation to work in an iframe.
-  // You won't need it on your project.
-  window: PropTypes.func,
+  children: PropTypes.node.isRequired
 }
 
 export default function HideAppBar(props) {
@@ -39,9 +64,9 @@ export default function HideAppBar(props) {
         <AppBar>
           <Toolbar>
             <div className="menu-item">
-              <label id="icon-slide-check" htmlFor="menu-slide">
-                <Menu className="menu-item__menu"/>
-              </label>
+                <button id="button-menu" className="menu-item__menu" type="button" onClick={buttonWasClicked}>
+                  menu
+                </button>
             </div>
               <div className="menu-logo">
                 <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />

@@ -28,78 +28,83 @@ class Home extends Component {
         <div className="site-content">
           <Slide />
           <div className="page-content">
-            <h1 className="titles">Fale Conosco</h1>
-            <div className="page-content__contact">
-              <div className="page-content__contact__item">
-                <FontAwesomeIcon icon={faPhone} />
-                <label>(21) 2474-6441</label>
-              </div>
-              <div className="page-content__contact__item">
-                <FontAwesomeIcon icon={faEnvelope} />
-                <label>rodobravo@transrodobravo.com.br</label>
-              </div>
-              <div className="page-content__contact__item">
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-                <label>Rua Maria José 21, Pavuna RJ</label>
-              </div>
+            <div className="page-content__top">
+              <div>
+                <h1 className="titles">Fale Conosco</h1>
+                <div className="page-content__contact">
+                <div className="page-content__contact__item">
+                  <FontAwesomeIcon icon={faPhone} />
+                  <label>(21) 2474-6441</label>
+                </div>
+                <div className="page-content__contact__item">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  <label>rodobravo@transrodobravo.com.br</label>
+                </div>
+                <div className="page-content__contact__item">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                  <label>Rua Maria José 21, Pavuna RJ</label>
+                </div>
 
-              <div className="page-content__contact__social">
-                <div className="page-content__contact__social__item">
-                  <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
-                    <FontAwesomeIcon icon={faFacebookF} />
-                  </a>
+                <div className="page-content__contact__social">
+                  <div className="page-content__contact__social__item">
+                    <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                  </div>
+                  <div className="page-content__contact__social__item">
+                    <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                  </div>
+                  <div className="page-content__contact__social__item">
+                    <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rodobravo Transportes">
+                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    </a>
+                  </div>
                 </div>
-                <div className="page-content__contact__social__item">
-                  <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </a>
-                </div>
-                <div className="page-content__contact__social__item">
-                  <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rodobravo Transportes">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                  </a>
-                </div>
+              </div>
+              </div>
+              <div>
+                <h1 className="titles">Onde Atuamos</h1>
+                <div className="page-content__map">
+                <img src={mapa} alt="Mapa de atuação de transportes Rodobravo"/>
+              </div>
               </div>
             </div>
-            
-            <h1 className="titles">Onde Atuamos</h1>
-            <div className="page-content__map">
-              <img src={mapa} />
-              
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-            <section className="page-content__service-cards top">
-              <div class="page-content__service-cards__circle">
-                <img src={support} />
-              </div>
-                <span>
-                  Prestamos serviços de tranferência para os mais diversos clientes
-                  e visamos atender ao mercado farmacêutico.
-                </span>
-              <button className="page-content__service-cards__button">Saiba mais</button>
-              <div className="page-content__service-cards__card"></div>
-            </section>
-            <section className="page-content__service-cards">
-              <div class="page-content__service-cards__circle">
-                <img src={antenna} />
-              </div>
-                <span>
-                Nosso monitoramento com rastreio 24h, conta com a mais alta tecnologia do mercado permitindo que nossos clientes se sintam seguros.
-                </span>
-              <button className="page-content__service-cards__button">Saiba mais</button>
-              <div className="page-content__service-cards__card"></div>
-            </section>
-            <section className="page-content__service-cards">
-              <div class="page-content__service-cards__circle">
-                <img src={truck} />
+            <p id="map-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+            <section className="page-content__service-cards__list">
+              <section className="page-content__service-cards__list__item top">
+                <div class="page-content__service-cards__list__item__circle">
+                  <img src={support} alt="Serviços de transferência, cargas secas e resfriadas Rodobravo"/>
+                </div>
+                  <span>
+                    Prestamos serviços de tranferência para os mais diversos clientes
+                    e visamos atender ao mercado farmacêutico.
+                  </span>
+                <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+                <div className="page-content__service-cards__list__item__card"></div>
+              </section>
+              <section className="page-content__service-cards__list__item">
+                <div class="page-content__service-cards__list__item__circle">
+                  <img src={antenna} alt="Rodobravo gerenciamento de risco e monitoramento 24 horas"/>
+                </div>
+                  <span>
+                  Monitoramento e rastreio 24h, com a mais alta tecnologia do mercado mantendo nossos clientes seguros.
+                  </span>
+                <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+                <div className="page-content__service-cards__list__item__card"></div>
+              </section>
+              <section className="page-content__service-cards__list__item">
+              <div class="page-content__service-cards__list__item__circle">
+                <img src={truck} alt="Frota Rodobravo em bom estado e equipe capacitada" />
               </div>
                 <span>
                   Nossa frota é bem capacitada com os mais diversos tipos de caminões a disposição dos nosso clientes.
                 </span>
-              <button className="page-content__service-cards__button">Saiba mais</button>
-              <div className="page-content__service-cards__card secs"></div>
+              <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+              <div className="page-content__service-cards__list__item__card secs"></div>
             </section>
-
+            </section>
             <h1 className="titles">Alguns Parceiros</h1>
             <Partners/>
           </div>

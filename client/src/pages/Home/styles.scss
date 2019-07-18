@@ -2,6 +2,14 @@
     .site-content {
         .page-content {
 
+
+            &__top {
+                @media #{$BREAKPOINT-TABLET-LAND} {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+
             p {
                 font-family: Roboto;
                 font-size: 18px;
@@ -24,7 +32,7 @@
                         color: $DETAILS_BLUE;
                         font-size: 1.5em;
                     }
-                    
+
                 }
 
                 &__social {
@@ -58,80 +66,113 @@
             }
 
             &__service-cards {
-                width: 100%;
-                height: 568px;
-                background-color: transparent;
-                position: relative;
-                
-                &__circle {
-                    top: 70px;
-                    background: radial-gradient(circle closest-side, $ITENS_ORANGE_TWO 0%, $ITENS_ORANGE_TWO 98%,rgba(0,0,0,0) 100%);
-                    width: 160px;
-                    height: 160px;
-                    margin: 10px;
-                    z-index: 2;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                    img {    
-                        max-width: 50%;
-                        margin: 25% 0 0 25%;
+                &__list {
+                    @media #{$BREAKPOINT-TABLET-LAND} {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        margin-top: 60px;
                     }
-                }  
+                    &__item {
+                        width: 100%;
+                        height: 568px;
+                        background-color: transparent;
+                        position: relative;
 
-                span {
-                    position: absolute;
-                    z-index: 3;
-                    top: 50%;
-                    left: 0;
-                    right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-family: Roboto;
-                    text-align: center;
-                    font-size: 20px;
-                    color: white;
+                        @media #{$BREAKPOINT-TABLET-LAND} {
+                            width: 287px;
+                            height: 532px;
+                        }
+
+                        &__circle {
+                            top: 70px;
+                            background: radial-gradient(circle closest-side, $ITENS_ORANGE_TWO 0%, $ITENS_ORANGE_TWO 98%,rgba(0,0,0,0) 100%);
+                            width: 160px;
+                            height: 160px;
+                            margin: 10px;
+                            z-index: 2;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            img {
+                                max-width: 50%;
+                                margin: 25% 0 0 25%;
+                            }
+                        }
+
+                        span {
+                            position: absolute;
+                            width: 80%;
+                            z-index: 3;
+                            top: 50%;
+                            left: 0;
+                            right: 0;
+                            margin-left: auto;
+                            margin-right: auto;
+                            font-family: Roboto;
+                            text-align: center;
+                            font-size: 20px;
+                            color: white;
+
+                            @media #{$BREAKPOINT-TABLET-LAND} {
+                                width: 80%;
+                            }
+                        }
+
+                        &__button {
+                            z-index: 3;
+                            position: absolute;
+                            bottom: 50px;
+                            width: 200px;
+                            height: 50px;
+                            background-color: $ITENS_ORANGE;
+                            font-family: Rival-Sans-Bold;
+                            color: #fff;
+                            font-size: 20px;
+                            border-radius: 3px;
+                            border: none;
+                            left: 0;
+                            right: 0;
+                            margin-left: auto;
+                            margin-right: auto;
+                            outline: 0px auto -webkit-focus-ring-color;
+                        }
+
+                        &__button:hover {
+                            background-color: $ORANGE_RODOBRAVO;
+                        }
+
+                        &__card {
+                            background-color: $DETAILS_BLUE;
+                            position: absolute;
+                            width: 100vw;
+                            height: 100%;
+                            left: -20px;
+                            top: 0;
+                            z-index: 1;
+                            border-bottom: 13px dashed#fff;
+
+                            @media #{$BREAKPOINT-TABLET-LAND} {
+                                position: relative;
+                                width: 100%;
+                                left: 0;
+                                border-bottom: none;
+                                border-radius: 7px;
+                            }
+                        }
+                    }
+
                 }
 
-                &__button {
-                    z-index: 3;
-                    position: absolute;
-                    bottom: 50px;
-                    width: 200px;
-                    height: 50px;
-                    background-color: $ITENS_ORANGE;
-                    font-family: Rival-Sans-Bold;
-                    color: #fff;
-                    font-size: 20px;
-                    border-radius: 3px;
-                    border: none;
-                    left: 0;
-                    right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                    outline: 0px auto -webkit-focus-ring-color;
-                }
 
-                &__button:hover {
-                    background-color: $ORANGE_RODOBRAVO;
-                }
-
-                &__card{
-                    background-color: $DETAILS_BLUE;
-                    position: absolute;
-                    width: 100vw;
-                    height: 100%;
-                    left: -20px;
-                    top: 0;
-                    z-index: 1;
-                    border-bottom: 13px dashed#fff;
-                }
             }
 
+                
         }
+
     }
 }
 
@@ -140,5 +181,14 @@
 }
 
 .top {
-    margin-top: 60px;              
+    margin-top: 60px;
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        margin-top: 0px;
+    }
+}
+
+#map-text {
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        display: none;
+    }
 }

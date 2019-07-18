@@ -25,7 +25,7 @@ const SlideScreenSettings = () => {
         arrows: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1
@@ -64,7 +64,7 @@ const SlideScreenSettings = () => {
               <div className="slide-gradiente"></div>
               <div className="slide-text-flex">
                 <div className="slide-text">
-                  <h1>CONFIE SUA CARGA EM QUEM TEM MAIS DE 17 ANOS DE EXPERIÊNCIA</h1>
+                  <h1>EFETUANDO MAIS DE 200 ENTREGAS POR SEMANA</h1>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ const SlideScreenSettings = () => {
               <div className="slide-gradiente"></div>
               <div className="slide-text-flex">
                 <div className="slide-text">
-                  <h1>CONFIE SUA CARGA EM QUEM TEM MAIS DE 17 ANOS DE EXPERIÊNCIA</h1>
+                  <h1>TRANSPORTANDO MAIS DE DUAS MIL TONELADAS POR MÊS</h1>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@ const SlideScreenSettings = () => {
               <div className="slide-gradiente"></div>
               <div className="slide-text-flex">
                 <div className="slide-text">
-                  <h1>CONFIE SUA CARGA EM QUEM TEM MAIS DE 17 ANOS DE EXPERIÊNCIA</h1>
+                  <h1>LEVANDO O QUE IMPORTA ATÉ VOCÊ</h1>
                 </div>
               </div>
             </div>

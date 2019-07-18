@@ -34,7 +34,7 @@ body{
         color: white;
 
         @media #{$BREAKPOINT-TABLET-LAND} {
-            justify-content: left;
+            justify-content: center;
             order: 3;
         }
 
@@ -45,10 +45,6 @@ body{
 
         &__facebook-icon {
             margin-right: 30px;
-
-            @media #{$BREAKPOINT-TABLET-LAND} {
-                margin-left: 50px;
-            }
         }
 
         &__instagram-icon {
@@ -91,6 +87,7 @@ body{
 
         @media #{$BREAKPOINT-TABLET-LAND} {
             order:2;
+            margin: 10px auto;
         }
 
         &__line {
@@ -100,12 +97,6 @@ body{
             border-top: 1px solid #707070;
             padding: 0;
             width: 90vw;
-
-            @media #{$BREAKPOINT-TABLET-LAND} {
-                width: 175px;
-                float: left;
-                margin: 0 0 0 33px;
-            }
         }
     }
 
@@ -114,7 +105,7 @@ body{
 
         @media #{$BREAKPOINT-TABLET-LAND} {
             order:1;
-            margin: 0 0 0 50px;
+            margin: 0 auto;
         }
 
         &__img {
@@ -122,14 +113,14 @@ body{
         }
     }
 
-
     &__menu{
         display: none;
         @media #{$BREAKPOINT-TABLET-LAND} {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
             order: 4;
-            margin: 22px 0 0 30px;
+            margin: 70px 0 0 0px;
             line-height: 29px;
             font-family: "Rival-Sans-Regular";
             font-size: 14px;
@@ -137,6 +128,16 @@ body{
             a {
                 color: white;
                 text-decoration: none;
+
+                @media #{$BREAKPOINT-TABLET-LAND} {
+                    margin-left: 50px;
+                }
+            }
+
+            a:hover {
+                @media #{$BREAKPOINT-TABLET-LAND} {
+                    background-color: $BLUE_RODOBRAVO;
+                }
             }
         }
     }
@@ -150,6 +151,8 @@ body{
 
         @media #{$BREAKPOINT-TABLET-LAND} {
             order:5;
+            position: absolute;
+            bottom: 5px;
         }
     }
 }

@@ -14,17 +14,17 @@ export default function Footer() {
       <footer className="footer">
         <div className="footer__social-icons">
           <div className="footer__social-icons__facebook-icon">
-            <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" alt="Facebook Rodobravo Transportes">
+            <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
               <FontAwesomeIcon icon={faFacebookF} size="2x" />
             </a>
           </div>
           <div className="footer__social-icons__instagram-icon">
-            <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" alt="Instagram Rodobravo Transportes">
+            <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
           </div>
           <div className="footer__social-icons__linkedin-icon">
-            <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" alt="Linkedin Rodobravo Transportes">
+            <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rodobravo Transportes">
               <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
             </a>
           </div>
@@ -36,7 +36,7 @@ export default function Footer() {
           <hr className="footer__divider__line"/>
         </div>
         <div className="footer__logo">
-          <a href="#" alt="Rodobravo Transportes">
+          <a href="window.location.reload()" alt="Rodobravo Transportes">
             <img className="footer__logo__img" src={Logo} alt="Rodobravo Transportes Logo" />
           </a>
           </div>

@@ -36,17 +36,17 @@ class NavBarMobi extends Component {
                       <div id="icons">
                         <div className="icons-list">
                           <div className="footer__facebook-icon">
-                            <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" alt="Facebook Rodobravo Transportes">
+                            <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
                               <FontAwesomeIcon icon={faFacebookF} size="1x" />
                             </a>
                           </div>
                           <div className="footer__instagram-icon">
-                            <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" alt="Instagram Rodobravo Transportes">
+                            <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
                               <FontAwesomeIcon icon={faInstagram} size="1x" />
                             </a>
                           </div>
                           <div className="footer__linkedin-icon">
-                            <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" alt="Linkedin Rodobravo Transportes">
+                            <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rodobravo Transportes">
                               <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
                             </a>
                           </div>

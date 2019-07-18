@@ -5,9 +5,9 @@
     }
 
     .site-content{
-        p, .container {
+        .page-content {
             max-width: 600px;
-            width: calc(100% - 30px);
+            width: calc(100% - 40px);
             margin: 0 auto;
 
             @media #{$BREAKPOINT-TABLET} {
@@ -18,12 +18,18 @@
             }
         }
 
+        .titles {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            font-family: Roboto-Bold;
+            font-size: 30px;
+            text-align: center;
+            color: $DETAILS_BLUE;
+        }
+
         @media #{$BREAKPOINT-TABLET} {
             padding-bottom: 350px;
            
         }
     }
 }
-
-// max-width: 1000px;
-// margin: 0 auto;

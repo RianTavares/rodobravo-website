@@ -1,0 +1,144 @@
+.App {
+    .site-content {
+        .page-content {
+
+            p {
+                font-family: Roboto;
+                font-size: 18px;
+            }
+
+            &__contact {
+                display: flex;
+                flex-direction: column;
+
+                &__item {
+                    margin-bottom: 20px;
+                    label {
+                            font-family: Roboto;
+                            font-size: 15px;
+                            margin-left: 10px;
+                    }
+
+                    svg {
+                        width: 28px;
+                        color: $DETAILS_BLUE;
+                        font-size: 1.5em;
+                    }
+                    
+                }
+
+                &__social {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    align-content: center;
+                    margin-top: 30px;
+
+                    &__item {
+                        a {
+                            text-decoration: none;
+                            color: $ITENS_ORANGE;
+                            svg {
+                                width: 25px;
+                                font-size: 2.5em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__map {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    max-width: 275px;
+                }
+            }
+
+            &__service-cards {
+                width: 100%;
+                height: 568px;
+                background-color: transparent;
+                position: relative;
+                
+                &__circle {
+                    top: 70px;
+                    background: radial-gradient(circle closest-side, $ITENS_ORANGE_TWO 0%, $ITENS_ORANGE_TWO 98%,rgba(0,0,0,0) 100%);
+                    width: 160px;
+                    height: 160px;
+                    margin: 10px;
+                    z-index: 2;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    img {    
+                        max-width: 50%;
+                        margin: 25% 0 0 25%;
+                    }
+                }  
+
+                span {
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: Roboto;
+                    text-align: center;
+                    font-size: 20px;
+                    color: white;
+                }
+
+                &__button {
+                    z-index: 3;
+                    position: absolute;
+                    bottom: 50px;
+                    width: 200px;
+                    height: 50px;
+                    background-color: $ITENS_ORANGE;
+                    font-family: Rival-Sans-Bold;
+                    color: #fff;
+                    font-size: 20px;
+                    border-radius: 3px;
+                    border: none;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    outline: 0px auto -webkit-focus-ring-color;
+                }
+
+                &__button:hover {
+                    background-color: $ORANGE_RODOBRAVO;
+                }
+
+                &__card{
+                    background-color: $DETAILS_BLUE;
+                    position: absolute;
+                    width: 100vw;
+                    height: 100%;
+                    left: -20px;
+                    top: 0;
+                    z-index: 1;
+                    border-bottom: 13px dashed#fff;
+                }
+            }
+
+        }
+    }
+}
+
+.secs {
+    border-bottom: none !important;
+}
+
+.top {
+    margin-top: 60px;              
+}

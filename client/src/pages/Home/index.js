@@ -74,7 +74,7 @@ class Home extends Component {
             <p id="map-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
             <section className="page-content__service-cards__list">
               <section className="page-content__service-cards__list__item top">
-                <div class="page-content__service-cards__list__item__circle">
+                <div className="page-content__service-cards__list__item__circle">
                   <img src={support} alt="Serviços de transferência, cargas secas e resfriadas Rodobravo"/>
                 </div>
                   <span>
@@ -85,7 +85,7 @@ class Home extends Component {
                 <div className="page-content__service-cards__list__item__card"></div>
               </section>
               <section className="page-content__service-cards__list__item">
-                <div class="page-content__service-cards__list__item__circle">
+                <div className="page-content__service-cards__list__item__circle">
                   <img src={antenna} alt="Rodobravo gerenciamento de risco e monitoramento 24 horas"/>
                 </div>
                   <span>
@@ -95,7 +95,7 @@ class Home extends Component {
                 <div className="page-content__service-cards__list__item__card"></div>
               </section>
               <section className="page-content__service-cards__list__item">
-              <div class="page-content__service-cards__list__item__circle">
+              <div className="page-content__service-cards__list__item__circle">
                 <img src={truck} alt="Frota Rodobravo em bom estado e equipe capacitada" />
               </div>
                 <span>

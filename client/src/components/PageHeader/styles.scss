@@ -1,0 +1,39 @@
+.pageHeader {
+    position: relative;
+
+    &__top-image {
+        width: 100vw;
+        height: 290px;
+    }
+
+    &__text {
+        text-align: center;
+        position: absolute;
+        color: white;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 115px;
+        font-family: 'Rival-Sans-Bold';
+        font-size: 40px;
+        z-index: 1;
+
+        @media #{$BREAKPOINT-TABLET-LAND} {
+            font-size: 75px;
+            margin-top: 80px;
+        }
+    }
+
+    .slide-gradiente {
+        display: block;
+        position: absolute;
+        background-image: linear-gradient(to bottom, transparent, black 100%);
+        height: 290px;
+        width: 100%;
+        margin-top: unset;
+        content: '';
+    }
+}

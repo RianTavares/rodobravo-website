@@ -1,15 +1,6 @@
 .site-content {
     .page-content {
 
-        &__about-text {
-            font-family: Roboto;
-            font-size: 18px;
-
-            @media #{$BREAKPOINT-TABLET-LAND} {
-                font-size: 26px;
-            }
-        }
-
         &__about-foto {
             position: relative;
             height: 270px;

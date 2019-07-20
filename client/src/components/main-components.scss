@@ -42,3 +42,12 @@
        
     }
 }
+
+span {
+    font-family: Roboto;
+    font-size: 18px;
+
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        font-size: 26px;
+    }
+}

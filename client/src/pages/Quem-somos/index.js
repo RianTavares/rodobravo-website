@@ -3,8 +3,6 @@ import MenuAppBar from '../../components/NavBarMenu'
 import MenuBarMobi from '../../components/NavBarMobi'
 import Footer from '../../components/Footer'
 import PageHeader from '../../components/PageHeader'
-import teamPicMobi from '../../assets/imgs/working-team-apps.jpg'
-import teamPicDesk from '../../assets/imgs/working-team-apps-desk.jpg'
 import Media from "react-media";
 
 class Rodobravo extends Component {
@@ -17,9 +15,9 @@ class Rodobravo extends Component {
       <Media query="(min-width: 975px)">
         {matches =>
           matches ? (
-            <PageHeader img={teamPicDesk} text={"QUEM SOMOS"} />
+            <PageHeader id={"about-top"} text={"QUEM SOMOS"} />
           ) : (
-            <PageHeader img={teamPicMobi} text={"QUEM SOMOS"} />
+            <PageHeader id={"about-top"} text={"QUEM SOMOS"} />
           )
         }
         </Media>

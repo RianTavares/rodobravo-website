@@ -15,8 +15,6 @@ import support from "../../assets/imgs/support.png"
 import antenna from "../../assets/imgs/antenna.png"
 import truck from "../../assets/imgs/delivery-truck.png"
 import PageHeader from '../../components/PageHeader'
-import contatoMobi from '../../assets/imgs/contact.jpg'
-import contatoDesk from '../../assets/imgs/contact-desk.jpg'
 import Media from "react-media"
 
 class Contato extends Component {
@@ -29,9 +27,9 @@ class Contato extends Component {
       <Media query="(min-width: 975px)">
         {matches =>
           matches ? (
-            <PageHeader img={contatoDesk} text={"CONTATO"} />
+            <PageHeader id={"contact-top"} text={"CONTATO"} />
           ) : (
-            <PageHeader img={contatoMobi} text={"CONTATO"} />
+            <PageHeader id={"contact-top"} text={"CONTATO"} />
           )
         }
         </Media>

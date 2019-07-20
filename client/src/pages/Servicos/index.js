@@ -3,8 +3,6 @@ import MenuAppBar from '../../components/NavBarMenu'
 import MenuBarMobi from '../../components/NavBarMobi'
 import Footer from '../../components/Footer'
 import PageHeader from '../../components/PageHeader'
-import servicoMobi from '../../assets/imgs/servicos.jpeg'
-import servicoDesk from '../../assets/imgs/servicos-desk.jpg'
 import Media from "react-media"
 
 class Servicos extends Component {
@@ -17,9 +15,9 @@ class Servicos extends Component {
       <Media query="(min-width: 975px)">
         {matches =>
           matches ? (
-            <PageHeader img={servicoDesk} text={"SERVIÇOS"} />
+            <PageHeader id={"services-top"} text={"SERVIÇOS"} />
           ) : (
-            <PageHeader img={servicoMobi} text={"SERVIÇOS"} />
+            <PageHeader id={"services-top"} text={"SERVIÇOS"} />
           )
         }
         </Media>

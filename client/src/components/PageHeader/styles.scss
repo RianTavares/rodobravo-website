@@ -4,15 +4,6 @@
     height: 290px;
     margin-bottom: 40px;
 
-    &__top-image {
-        width: 100%;
-        height: 290px;
-
-        @media #{$BREAKPOINT-TABLET-LAND} {
-            position: absolute;
-        }
-    }
-
     &__text {
         text-align: center;
         position: absolute;
@@ -43,5 +34,29 @@
         margin-top: unset;
         content: '';
         z-index: 1;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #about-top {
+        background-image: url($ABOUT_US);
+    }
+    #contact-top {
+        background-image: url($CONTACT);
+    }
+    #trucks-top {
+        background-image: url($TRUCKS);
+    }
+    #tracking-top {
+        background-image: url($TRACKING);
+    }
+    #services-top {
+        background-image: url($SERVICES);
     }
 }

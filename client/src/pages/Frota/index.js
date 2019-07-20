@@ -15,8 +15,6 @@ import support from "../../assets/imgs/support.png"
 import antenna from "../../assets/imgs/antenna.png"
 import truck from "../../assets/imgs/delivery-truck.png"
 import PageHeader from '../../components/PageHeader'
-import frotaMobi from '../../assets/imgs/frota.jpeg'
-import frotaDesk from '../../assets/imgs/frota-desk.jpg'
 import Media from "react-media"
 
 class Frota extends Component {
@@ -29,9 +27,9 @@ class Frota extends Component {
       <Media query="(min-width: 975px)">
         {matches =>
           matches ? (
-            <PageHeader img={frotaDesk} text={"FROTA"} />
+            <PageHeader id={"trucks-top"} text={"FROTA"} />
           ) : (
-            <PageHeader img={frotaMobi} text={"FROTA"} />
+            <PageHeader id={"trucks-top"} text={"FROTA"} />
           )
         }
         </Media>

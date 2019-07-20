@@ -3,8 +3,6 @@ import MenuAppBar from '../../components/NavBarMenu'
 import MenuBarMobi from '../../components/NavBarMobi'
 import Footer from '../../components/Footer'
 import PageHeader from '../../components/PageHeader'
-import ratreioMobi from '../../assets/imgs/sala-de-controle.jpg'
-import rastreioDesk from '../../assets/imgs/sala-de-controle-desk.jpg'
 import Media from "react-media"
 
 class Rastreio extends Component {
@@ -17,9 +15,9 @@ class Rastreio extends Component {
       <Media query="(min-width: 975px)">
         {matches =>
           matches ? (
-            <PageHeader img={rastreioDesk} text={"MONITORAMENTO"} />
+            <PageHeader id={"tracking-top"} text={"MONITORAMENTO"} />
           ) : (
-            <PageHeader img={ratreioMobi} text={"RASTREIO"} />
+            <PageHeader id={"tracking-top"} text={"RASTREIO"} />
           )
         }
         </Media>

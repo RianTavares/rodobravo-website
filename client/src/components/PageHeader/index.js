@@ -7,7 +7,7 @@ class PageHeader extends Component {
             <section className="pageHeader">
                 <h1 className="pageHeader__text">{this.props.text}</h1>
                 <div className="slide-gradiente"></div>
-                <img className="pageHeader__top-image" src={this.props.img} alt="Rodobravo Transportes" />
+                <div className="pageHeader__img" id={this.props.id}></div>
             </section>
         )
     }

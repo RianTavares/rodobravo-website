@@ -24,7 +24,7 @@ const SlideScreenSettings = () => {
         dotsClass: 'slide-dots',
         arrows: false,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         speed: 500,
         slidesToShow: 1,

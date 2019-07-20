@@ -44,11 +44,12 @@
 
       .slide-text {
         position: absolute;
-        top: 200px;
+        top: 100px;
         color: white;
         font-family: Rival-Sans-Bold;
-        max-width: 330px;
+        max-width: 296px;
         font-size: 12px;
+        text-align: center;
 
         @media #{$BREAKPOINT-MOBILE-IPHONE-5S} {
           max-width: 360px;

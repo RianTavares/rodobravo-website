@@ -14,6 +14,8 @@ class NavBarMobi extends Component {
   keepScrolling() {
     const body = document.body;
     body.removeAttribute('class')
+    body.style.top = 0;
+    window.scrollTo(0, body.dataset.y);
   }
 
   render () {

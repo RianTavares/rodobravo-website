@@ -29,9 +29,9 @@ class Frota extends Component {
       <Media query="(min-width: 975px)">
         {matches =>
           matches ? (
-            <PageHeader img={frotaDesk} text={"SERVIÇOS"} />
+            <PageHeader img={frotaDesk} text={"FROTA"} />
           ) : (
-            <PageHeader img={frotaMobi} text={"SERVIÇOS"} />
+            <PageHeader img={frotaMobi} text={"FROTA"} />
           )
         }
         </Media>

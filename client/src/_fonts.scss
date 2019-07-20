@@ -35,6 +35,18 @@
 }
 
 @font-face {
+    font-family: 'Rival-Sans-Thin';
+    src: url('./fonts/RivalSans-Thin.eot');
+    src: url('./fonts/RivalSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RivalSans-Thin.woff2') format('woff2'),
+        url('./fonts/RivalSans-Thin.woff') format('woff'),
+        url('./fonts/RivalSans-Thin.ttf') format('truetype'),
+        url('./fonts/RivalSans-Thin.svg#RivalSans-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Rival-Sans-Thinitalic';
     src: url('./fonts/RivalSans-Thinitalic.eot');
     src: url('./fonts/RivalSans-Thinitalic.eot?#iefix') format('embedded-opentype'),

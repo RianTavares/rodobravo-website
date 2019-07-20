@@ -12,6 +12,7 @@ import slide4 from "../../assets/imgs/slide/rodobravo4.jpg";
 import slideMobi4 from "../../assets/imgs/slide/rodobravoMobi4.jpg";
 
 const SlideScreenSettings = () => {
+   // eslint-disable-next-line
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
     useEffect(() => {
         window.addEventListener('resize', event => {

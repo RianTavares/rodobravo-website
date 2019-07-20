@@ -33,3 +33,12 @@
         }
     }
 }
+
+
+.last {
+    margin-bottom: 80px;
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        margin-bottom: 150px;
+       
+    }
+}

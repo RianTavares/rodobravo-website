@@ -21,45 +21,33 @@
   }
 
   .slide-text-flex {
+      display: block;
+      position: relative;
+      margin-top: -300px;
+      height: 300px;
       width: 100%;
-      padding: 0 10px 0 10px;
-
-      @media #{$BREAKPOINT-TABLET} {
-        margin-left: 25%;
-        width: unset;
-        padding: unset;
-        text-align: center;
-      }
 
       @media #{$BREAKPOINT-TABLET-LAND} {
-        margin-left: 19%;
-      }
-
-      @media #{$BREAKPOINT-DESK} {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-left: unset;
+        margin-top: -423px;
+      height: 423px;
       }
 
       .slide-text {
-        position: absolute;
-        top: 100px;
-        color: white;
-        font-family: Rival-Sans-Bold;
-        max-width: 296px;
-        font-size: 12px;
-        text-align: center;
-
-        @media #{$BREAKPOINT-MOBILE-IPHONE-5S} {
-          max-width: 360px;
-        }
+          color: white;
+          font-family: Rival-Sans-Bold;
+          font-size: 12px;
+          position: absolute;    
+          left: 0;
+          right: 0;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 120px;
 
         @media #{$BREAKPOINT-TABLET-LAND} {
-          max-width: 650px;
+          width: 650px;
           font-size: 20px;
-          top: 143px;
-          text-align: center;
+          margin-top: 220px;
         }
       }
     }
@@ -127,6 +115,11 @@
   height: 300px;
   width: 100%;
   content: '';
+
+  @media #{$BREAKPOINT-TABLET-LAND} {
+    margin-top: -423px;
+    height: 423px;
+  }
 }
 
 

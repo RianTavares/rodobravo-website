@@ -14,6 +14,10 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
+
+                @media #{$BREAKPOINT-TABLET-LAND} {
+                    margin-top: 50px;
+                }
             }
 
             #logo1 {

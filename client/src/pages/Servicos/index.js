@@ -23,7 +23,60 @@ class Servicos extends Component {
         </Media>
         <div className="site-content">
           <div className="page-content">
-           
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
+              ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
+            </span>
+
+            <section className="page-content__service">
+              <div className="page-content__service__text">
+                <h1 className="titles">Lorem Ipsum</h1>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
+                  ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
+                </span>
+              </div>
+              <div className="page-content__service__foto">
+                <div id="service-item1"></div>
+              </div>
+            </section>
+
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
+              ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
+            </span>
+
+            <section className="page-content__service">
+              <div className="page-content__service__text order2">
+                <h1 className="titles">Lorem Ipsum</h1>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
+                  ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
+                </span>
+              </div>
+              <div className="page-content__service__foto order1">
+                <div id="service-item2"></div>
+              </div>
+            </section>
+
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
+              ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
+            </span>
+
+            <section className="page-content__service last">
+              <div className="page-content__service__text">
+                <h1 className="titles">Lorem Ipsum</h1>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
+                  ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
+                </span>
+              </div>
+              <div className="page-content__service__foto">
+                <div id="service-item3"></div>
+              </div>
+            </section>
+
           </div>
         </div>
         <Footer/>

@@ -36,9 +36,9 @@
 
 
 .last {
-    margin-bottom: 80px;
+    margin-bottom: 80px !important;
     @media #{$BREAKPOINT-TABLET-LAND} {
-        margin-bottom: 150px;
+        margin-bottom: 150px !important;
        
     }
 }

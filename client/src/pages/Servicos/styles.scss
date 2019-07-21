@@ -1,6 +1,66 @@
 .site-content {
     .page-content {
 
+        &__service {
+            margin: 30px 0 30px 0;
+            
+            .order1 {
+                order: 1;
+            }
+
+            .order2 {
+                order: 2;
+            }
+
+            @media #{$BREAKPOINT-TABLET-LAND} {
+                display: flex;
+            }
+
+            &__text {
+                @media #{$BREAKPOINT-TABLET-LAND} {
+                    width: 420px;
+                }
+            }
+            
+            &__foto {
+                margin: 50px 0 50px 0;
+                position: relative;
+                height: 210px;
+                background-color: transparent;
+
+                @media #{$BREAKPOINT-TABLET-LAND} {
+                    height: 335px;
+                    width: 580px;
+                }
+
+                div {
+                    background-color: transparent;
+                    position: absolute;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 100vw;
+                    height: 100%;
+                    left: -20px;
+
+                    @media #{$BREAKPOINT-TABLET-LAND} {
+                        width: 100%;
+                    }
+                }
+
+                #service-item1 {
+                    background-image: url($SERVICE_1);
+                }
+
+                #service-item2 {
+                    background-image: url($SERVICE_2);
+                }
+
+                #service-item3 {
+                    background-image: url($SERVICE_3);
+                }
+            }
+        }
 
     }
 }

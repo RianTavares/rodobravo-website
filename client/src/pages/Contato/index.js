@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
+import RodoPin from '../../components/PinRodobravo'
 
 class Contato extends Component {
   render() {
@@ -87,6 +88,9 @@ class Contato extends Component {
               Enviar
             </Button>
             </form>
+
+            <RodoPin />
+
         </div>
       </div>
         <Footer/>

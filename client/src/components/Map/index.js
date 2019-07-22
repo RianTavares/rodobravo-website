@@ -1,26 +1,11 @@
 // eslint-disable-next-line
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
-
-const AnyReactComponent = ({ text }) => (
-    <div style={{
-      color: 'white', 
-      background: 'grey',
-      padding: '15px 10px',
-      display: 'inline-flex',
-      textAlign: 'center',
-      alignItems: 'center',
-      justifyContent: 'center',
-      borderRadius: '100%',
-      transform: 'translate(-50%, -50%)'
-    }}>
-      {text}
-    </div>
-  );
+import React, { Component } from 'react'
+import GoogleMapReact from 'google-map-react'
+import RodoPin from '../../components/PinRodobravo'
   
   class SimpleMap extends React.Component {
     static defaultProps = {
-      center: {lat: 59.95, lng: 30.33},
+      center: {lat: -22.81, lng: -43.33},
       zoom: 11
     };
   
@@ -31,15 +16,14 @@ const AnyReactComponent = ({ text }) => (
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent 
-            lat={59.955413} 
-            lng={30.337844} 
-            text={'Kreyser Avrora'} 
-          />
+
+            <RodoPin
+                lat={-22.814105} 
+                lng={-43.335146} 
+            />
         </GoogleMapReact>
       );
     }
   }
-  
   
   export default SimpleMap;

@@ -1,4 +1,4 @@
-// eslint-disable-next-line 
+// eslint-disable-next-line
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
@@ -27,9 +27,9 @@ const AnyReactComponent = ({ text }) => (
     render() {
       return (
          <GoogleMapReact
-        //  bootstrapURLKeys={{ key: 'AIzaSyAWY114uh2m-0pkHEdij_9jL1hWGtQGP7k' }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
+            bootstrapURLKeys={{ key: 'AIzaSyAWY114uh2m-0pkHEdij_9jL1hWGtQGP7k' }}
+            defaultCenter={this.props.center}
+            defaultZoom={this.props.zoom}
         >
           <AnyReactComponent 
             lat={59.955413} 

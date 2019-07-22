@@ -5,7 +5,7 @@ import RodoPin from '../../components/PinRodobravo'
   
   class SimpleMap extends React.Component {
     static defaultProps = {
-      center: {lat: -22.81, lng: -43.33},
+      center: {lat: -22.814105, lng: -43.335146},
       zoom: 11
     };
   

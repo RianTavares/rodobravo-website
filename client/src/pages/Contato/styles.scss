@@ -1,0 +1,39 @@
+.site-content {
+    .page-content {
+        &__google-map {
+            margin: 30px 0 5px 0;
+        }
+
+        &__contact-card {
+           &__item {
+               svg {
+                width: 28px;
+                color: $DETAILS_BLUE;
+                font-size: 1.5em;
+                margin-top: 10px;
+               }
+           }
+        }
+
+        form {
+            * {
+                width: 100%;
+            }
+            
+            
+
+            #outlined-dense-multiline {
+                height: 150px !important;
+            }
+
+            button {
+                background-color: $ITENS_ORANGE;
+                margin-top: 20px;
+                color: white;
+                span {
+                    font-family: Roboto;
+                }
+            }
+        }
+    }
+}

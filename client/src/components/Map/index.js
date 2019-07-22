@@ -12,7 +12,7 @@ import RodoPin from '../../components/PinRodobravo'
     render() {
       return (
          <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyAWY114uh2m-0pkHEdij_9jL1hWGtQGP7k' }}
+            bootstrapURLKeys={{ key: '' }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
         >

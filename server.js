@@ -1,16 +1,17 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
+const API_MAP = process.env.API_MAP;
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // An api endpoint that returns a short list of items
-app.get('/api/getList', (req,res) => {
-    var list = ["item1", "item2", "item3"];
-    res.json(list);
-    console.log('Sent list of items');
+app.get('/api/map', (req,res) => {
+    var mapKey = API_MAP;
+    console.log('API_MAPA: ', mapKey)
+    res.send({ MAP_KEY: mapKey });
+    console.log('chave enviada');
 });
 
 // Handles any requests that don't match the ones above

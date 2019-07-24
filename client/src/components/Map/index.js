@@ -5,23 +5,9 @@ import RodoPin from '../../components/PinRodobravo'
   
   class SimpleMap extends React.Component {
     state = {
-      response: ''
+      response: process.env.API_MAP
     };
   
-    componentDidMount() {
-      this.callApi()
-        .then(res => this.setState({ response: res.MAP_KEY }))
-        .catch(err => console.log(err));
-    }
-  
-    callApi = async () => {
-      const response = await fetch('/api/map');
-      const body = await response.json();
-      if (response.status !== 200) throw Error(body.message);
-  
-      return body;
-    };
-
     static defaultProps = {
       center: {lat: -22.814105, lng: -43.335146},
       zoom: 11

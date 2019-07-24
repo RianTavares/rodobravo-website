@@ -2,10 +2,11 @@
 import React, { Component } from 'react'
 import GoogleMapReact from 'google-map-react'
 import RodoPin from '../../components/PinRodobravo'
-  
+require('dotenv').config();
+
   class SimpleMap extends React.Component {
     state = {
-      response: process.env.API_MAP
+      response: process.env.REACT_APP_API_MAP
     };
   
     static defaultProps = {
@@ -16,7 +17,7 @@ import RodoPin from '../../components/PinRodobravo'
     render() {
       console.log('oi');
       console.log(this.state.response);
-      
+      console.log(process.env.REACT_APP_API_MAP);
       
       return (
          <GoogleMapReact

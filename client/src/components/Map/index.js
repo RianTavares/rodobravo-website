@@ -14,6 +14,7 @@ import RodoPin from '../../components/PinRodobravo'
     };
 
     render() {
+      console.log('AQUI: ', process.env.REACT_APP_API_MAP)
       return (
          <GoogleMapReact
             bootstrapURLKeys={{ key: this.state.response }}

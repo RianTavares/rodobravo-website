@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 import GoogleMapReact from 'google-map-react'
 import RodoPin from '../../components/PinRodobravo'
-require('dotenv').config();
 
   class SimpleMap extends React.Component {
     state = {
@@ -15,10 +14,6 @@ require('dotenv').config();
     };
 
     render() {
-      console.log('oi');
-      console.log(this.state.response);
-      console.log(process.env.REACT_APP_API_MAP);
-      
       return (
          <GoogleMapReact
             bootstrapURLKeys={{ key: this.state.response }}

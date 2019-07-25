@@ -14,10 +14,10 @@ import RodoPin from '../../components/PinRodobravo'
     };
 
     render() {
-      console.log('AQUI: ', process.env.REACT_APP_API_MAP)
+      console.log('AQUI: ', `${this.state.response}`)
       return (
          <GoogleMapReact
-            bootstrapURLKeys={{ key: this.state.response }}
+            bootstrapURLKeys={{ key: `${this.state.response}` }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
         >

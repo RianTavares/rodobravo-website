@@ -33,7 +33,7 @@ class Rodobravo extends Component {
               <section className="page-content__about-foto__slide-gradiente">
                 <label>Nosso primeiro veículo. Um VW13.180</label>
               </section>
-              <div className="about-us-foto" id="vw">
+              <div className="about-us-foto" id="caminhao">
 
               </div>
             </div>

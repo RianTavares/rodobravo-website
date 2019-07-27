@@ -3,13 +3,74 @@
         &__gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             div {
                 width: 90px;
                 height: 90px;
                 background-color: rebeccapurple;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 margin-top: 5px;
+
+                @media #{$BREAKPOINT-MOBILE-LAND}{
+                    width: 173px;
+                    height: 173px;
+                }
+
+                @media #{$BREAKPOINT-TABLET}{
+                    width: 239px;
+                    height: 239px;
+                }
+
+                @media #{$BREAKPOINT-TABLET-LAND}{
+                    width: 328px;
+                    height: 328px;
+                }
+
+                
+                
+
+               
             }
+            
+            #Frota-Rodobravo-1 {
+                background-image: url($FOTO1);
+            }
+            #Frota-Rodobravo-2 {
+                background-image: url($FOTO2);
+            }
+            #Frota-Rodobravo-3 {
+                background-image: url($FOTO3);    
+            }
+            #Frota-Rodobravo-4 {
+                background-image: url($FOTO4);    
+            }
+            #Frota-Rodobravo-5 {
+                background-image: url($FOTO5);    
+            }
+            #Frota-Rodobravo-6 {
+                background-image: url($FOTO6);    
+            }
+            #Frota-Rodobravo-7 {
+                background-image: url($FOTO7);    
+            }
+            #Frota-Rodobravo-8 {
+                background-image: url($FOTO8);    
+            }
+            #Frota-Rodobravo-9 {
+                background-image: url($FOTO9);    
+            }
+            #Frota-Rodobravo-10 {
+                background-image: url($FOTO10);    
+            }
+            #Frota-Rodobravo-11 {
+                background-image: url($FOTO11);    
+            }
+            #Frota-Rodobravo-12 {
+                background-image: url($FOTO12);    
+            }
+
         }
     }
 }

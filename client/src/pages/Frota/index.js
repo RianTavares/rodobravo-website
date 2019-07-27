@@ -23,19 +23,19 @@ class Frota extends Component {
         </Media>
         <div className="site-content">
           <div className="page-content">
-            <section className="page-content__gallery">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <section className="page-content__gallery last">
+              <div id="Frota-Rodobravo-1"></div>
+              <div id="Frota-Rodobravo-2"></div>
+              <div id="Frota-Rodobravo-3"></div>
+              <div id="Frota-Rodobravo-4"></div>
+              <div id="Frota-Rodobravo-5"></div>
+              <div id="Frota-Rodobravo-6"></div>
+              <div id="Frota-Rodobravo-7"></div>
+              <div id="Frota-Rodobravo-8"></div>
+              <div id="Frota-Rodobravo-9"></div>
+              <div id="Frota-Rodobravo-10"></div>
+              <div id="Frota-Rodobravo-11"></div>
+              <div id="Frota-Rodobravo-12"></div>
             </section>
           </div>
         </div>

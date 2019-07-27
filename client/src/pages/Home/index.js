@@ -11,7 +11,7 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import mapa from "../../assets/imgs/mapas.png"
+import mapa from "../../assets/imgs/mapa-operacao.jpg"
 import support from "../../assets/imgs/support.png";
 import antenna from "../../assets/imgs/antenna.png";
 import truck from "../../assets/imgs/delivery-truck.png";

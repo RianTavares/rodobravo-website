@@ -1,14 +1,18 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path');
 const app = express();
+const bodyParser = require('body-parser');
+const routes = require('./routes');
+
+app.use(cors());
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// An api endpoint that returns a short list of items
-app.get('/api/map', (req,res) => {
-    console.log('chave enviada');
-});
+app.use(bodyParser.json());
+
+app.use('/api/v1', routes() );
 
 // Handles any requests that don't match the ones above
 app.get('*', (req,res) =>{

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import MenuAppBar from '../../components/NavBarMenu';
+import React, { Component } from 'react'
+import MenuAppBar from '../../components/NavBarMenu'
 import MenuBarMobi from '../../components/NavBarMobi'
 import Footer from '../../components/Footer'
 import PageHeader from '../../components/PageHeader'
@@ -7,8 +7,7 @@ import Media from "react-media"
 import SimpleMap from '../../components/Map'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
-import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
+import Form from '../../components/Form'
 
 class Contato extends Component {
   render() {
@@ -51,42 +50,8 @@ class Contato extends Component {
           </div>
         
             <h1 className="titles">Fale Conosco</h1>
-            <form className="last">
-              <TextField
-                id="outlined-name"
-                label="Nome"
-                className="{classes.textField}"
-                margin="normal"
-                variant="outlined"
-              />
-              <TextField
-              id="outlined-email"
-              label="Email"
-              className="{classes.textField}"
-              margin="normal"
-              variant="outlined"
-            />
-            <TextField
-              id="outlined-assunto"
-              label="Assunto"
-              className="{classes.textField}"
-              margin="normal"
-              variant="outlined"
-            />
-            <TextField
-              id="outlined-dense-multiline"
-              label="Mensagem"
-              className="{clsx(classes.textField, classes.dense)}"
-              margin="dense"
-              variant="outlined"
-              multiline
-              rowsMax="4"
-            />
-
-            <Button variant="contained">
-              Enviar
-            </Button>
-            </form>
+            <Form />
+            
         </div>
       </div>
         <Footer/>

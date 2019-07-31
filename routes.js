@@ -1,6 +1,7 @@
 const api = require('express').Router();
 const nodemailer = require("nodemailer");
-
+const dotenv = require('dotenv');
+dotenv.config();
 
 module.exports = () => {
 
@@ -17,8 +18,8 @@ module.exports = () => {
             port: 465,
             secure: true, 
             auth: {
-                user: 'rian.tavares@transrodobravo.com.br', 
-                pass: 'Rodobravo@rt1' 
+                user: process.env.USER_MAIL, 
+                pass: process.env.PASS_MAIL
             },
             tls: {
                 rejectUnauthorized: false

@@ -13,8 +13,10 @@
     "concurrently": "^3.5.0",
     "connect": "^3.7.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
     "express": "^4.16.2",
-    "express-favicon": "^2.0.1"
+    "express-favicon": "^2.0.1",
+    "nodemailer": "^6.3.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",

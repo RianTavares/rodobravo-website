@@ -44,10 +44,11 @@
 }
 
 span {
+    text-align: justify;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
 
     @media #{$BREAKPOINT-TABLET-LAND} {
-        font-size: 26px;
+        font-size: 18   px;
     }
 }

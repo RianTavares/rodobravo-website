@@ -133,12 +133,6 @@ body{
                     margin-left: 50px;
                 }
             }
-
-            a:hover {
-                @media #{$BREAKPOINT-TABLET-LAND} {
-                    background-color: $BLUE_RODOBRAVO;
-                }
-            }
         }
     }
 

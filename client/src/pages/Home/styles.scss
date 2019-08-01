@@ -6,54 +6,87 @@
             &__top {
                 @media #{$BREAKPOINT-TABLET-LAND} {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-between;
+                }
+
+                &__item {
+
+                    @media #{$BREAKPOINT-TABLET-LAND} {
+                        max-width: 300px;
+                    }
+
+                    &__contact {
+                        display: flex;
+                        flex-direction: column;
+        
+                        &__social {
+        
+                            @media #{$BREAKPOINT-TABLET-LAND} {
+                                display: none;
+                            }
+        
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            align-content: center;
+                            margin-top: 30px;
+        
+                            &__item {
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 60px;
+                                text-align: center;
+                                background-color: white;
+                                box-shadow: 1px 2px 4px rgba(0, 0, 0, .6);
+                                
+                                svg {
+                                    width: 25px;
+                                    font-size: 2.5em;
+                                    margin-top: 12px;
+                                    color: $DETAILS_BLUE;
+                                }
+                            }
+        
+                            &__item:hover {
+                                background-color: $FOOTER_COLOR;
+        
+                                svg {
+                                    color: white;   
+                                }
+                            }
+                        }
+
+                        &__item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            &__button {
+                                width: 200px;
+                                height: 50px;
+                                background-color: $DETAILS_BLUE;
+                                font-family: Rival-Sans-Bold;
+                                color: #fff;
+                                font-size: 20px;
+                                border-radius: 3px;
+                                border: none;
+                                margin: 20px auto;
+                                outline: 0px auto -webkit-focus-ring-color;
+                            }
+            
+                            &__button:hover {
+                                background-color: $FOOTER_COLOR;
+                            }
+                        }
+                    }
                 }
             }
 
             p {
                 font-family: Roboto;
                 font-size: 18px;
-            }
-
-            &__contact {
-                display: flex;
-                flex-direction: column;
-
-                &__item {
-                    margin-bottom: 20px;
-                    label {
-                            font-family: Roboto;
-                            font-size: 15px;
-                            margin-left: 10px;
-                    }
-
-                    svg {
-                        width: 28px;
-                        color: $DETAILS_BLUE;
-                        font-size: 1.5em;
-                    }
-
-                }
-
-                &__social {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    align-content: center;
-                    margin-top: 30px;
-
-                    &__item {
-                        a {
-                            text-decoration: none;
-                            color: $ITENS_ORANGE;
-                            svg {
-                                width: 25px;
-                                font-size: 2.5em;
-                            }
-                        }
-                    }
-                }
             }
 
             &__map {
@@ -70,7 +103,7 @@
                     @media #{$BREAKPOINT-TABLET-LAND} {
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-around;
+                        justify-content: space-between;
                         margin-top: 60px;
                     }
                     &__item {
@@ -187,8 +220,22 @@
     }
 }
 
-#map-text {
-    @media #{$BREAKPOINT-TABLET-LAND} {
-        display: none;
+.span-map {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        margin-top: 30px;
+        text-align: center !important;
+    }
+}
+
+.h1-map {
+    h1 {
+        @media #{$BREAKPOINT-TABLET-LAND} {
+            width: 600px;
+        }
     }
 }

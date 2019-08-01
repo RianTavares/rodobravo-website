@@ -5,9 +5,6 @@ import Footer from '../../components/Footer'
 import Partners from '../../components/Partners'
 import Slide from '../../components/Slide'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -29,49 +26,48 @@ class Home extends Component {
           <Slide />
           <div className="page-content">
             <div className="page-content__top">
-              <div>
-                <h1 className="titles">Fale Conosco</h1>
-                <div className="page-content__contact">
-                <div className="page-content__contact__item">
-                  <FontAwesomeIcon icon={faPhone} />
-                  <label>(21) 2474-6441</label>
+              <div className="page-content__top__item">
+                <h1 className="titles">Cotação de Frete</h1>
+                <div className="page-content__top__item__contact">
+                <div className="page-content__top__item__contact__item">
+                  <span className="page-content__top__item__contact__item__span">
+                    Através da nossa página de contato você pode realizar cotação de frete online, 
+                    tirar suas dúvidas ou enviar críticas e sugestões.
+                  </span>
+                  <button className="page-content__top__item__contact__item__button">Saiba mais</button>
                 </div>
-                <div className="page-content__contact__item">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                  <label>rodobravo@transrodobravo.com.br</label>
-                </div>
-                <div className="page-content__contact__item">
-                  <FontAwesomeIcon icon={faMapMarkerAlt} />
-                  <label>Rua Maria José 21, Pavuna RJ</label>
-                </div>
-
-                <div className="page-content__contact__social">
-                  <div className="page-content__contact__social__item">
-                    <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a>
-                  </div>
-                  <div className="page-content__contact__social__item">
-                    <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
-                      <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                  </div>
-                  <div className="page-content__contact__social__item">
-                    <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rodobravo Transportes">
-                      <FontAwesomeIcon icon={faLinkedinIn} />
-                    </a>
-                  </div>
+                <div className="page-content__top__item__contact__social">
+                  <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
+                    <div className="page-content__top__item__contact__social__item">
+                        <FontAwesomeIcon icon={faFacebookF} />
+                    </div>
+                  </a>
+                  <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
+                    <div className="page-content__top__item__contact__social__item">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </div>
+                  </a>
+                  <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rodobravo Transportes">
+                    <div className="page-content__top__item__contact__social__item">
+                        <FontAwesomeIcon icon={faLinkedinIn} />
+                    </div>
+                  </a>
                 </div>
               </div>
               </div>
-              <div>
+              <div className="page-content__top__item h1-map">
                 <h1 className="titles">Onde Atuamos</h1>
                 <div className="page-content__map">
-                <img src={mapa} alt="Mapa de atuação de transportes Rodobravo"/>
+                  <img src={mapa} alt="Mapa de atuação de transportes Rodobravo"/>
+                </div>
               </div>
-              </div>
+              <div className="page-content__top__item span-map">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </div>
             </div>
-            <p id="map-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+            
             <section className="page-content__service-cards__list">
               <section className="page-content__service-cards__list__item top">
                 <div className="page-content__service-cards__list__item__circle">

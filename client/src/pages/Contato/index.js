@@ -8,6 +8,7 @@ import SimpleMap from '../../components/Map'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import Form from '../../components/Form'
+import Alert from '../../components/Alert'
 
 class Contato extends Component {
   render() {
@@ -50,6 +51,7 @@ class Contato extends Component {
           </div>
         
             <h1 className="titles">Fale Conosco</h1>
+            <Alert />
             <Form />
             
         </div>

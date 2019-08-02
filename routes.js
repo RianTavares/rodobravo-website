@@ -39,15 +39,13 @@ module.exports = () => {
             });
         
             console.log("Message sent: %s", info.messageId);
-        
+            res.send({'ok': 'Mensagem Enviada'});
             console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
         }
 
-        main().catch(console.error);
-
-        // console.log(req.body);
-        // res.send({ ok: 'Formulário recebido' });
-        
+        main().catch(error => {
+            res.send({'error': `${error.responseCode}`})
+        });
     });
 
   return api;

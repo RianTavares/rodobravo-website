@@ -81,10 +81,10 @@ function arrowWasClicked() {
     button.classList.remove('is-active');
   }
 
-  let foto = "FrotaRodobravo"
   for(let i = 1; i < 13; i ++) {
-    let classe = `${foto}${i}`;
-    const imgTag = document.querySelector(`#FrotaRodobravo${i}`);
+    let classe = `FrotaRodobravo${i}`;
+    const imgTag = document.querySelector(`#${classe}`);
+    
     if(!imgTag.hasAttribute("hidden")) {
         imgTag.setAttribute("hidden", true);
     }

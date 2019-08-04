@@ -1,11 +1,6 @@
 @import "../../conf.scss";
 
 .menu-item {
-    &__menu {
-        @media #{$BREAKPOINT-TABLET-LAND} {
-            display: none !important;
-        }
-    }
 
     #button-menu {
         outline: 0px auto -webkit-focus-ring-color;
@@ -98,3 +93,15 @@
         padding-right: unset !important;
     }
 }
+
+#button-menu {
+        @media #{$BREAKPOINT-TABLET-LAND} {
+            display: none !important;
+        }
+    }
+
+    #frota-menu {
+        @media #{$BREAKPOINT-TABLET-LAND} {
+            display: none !important;
+        }
+    }

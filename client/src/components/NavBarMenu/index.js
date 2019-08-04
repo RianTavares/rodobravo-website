@@ -26,7 +26,7 @@ function HideOnScroll(props) {
 
 function buttonWasClicked() { 
   const body = document.body;
-  const button = document.querySelector('.menu-item > button');
+  const button = document.querySelector('#button-menu');
   const slideBar = document.querySelector('#menu-slide-bar');
   let varScroll;
 
@@ -43,11 +43,51 @@ function buttonWasClicked() {
     window.scrollTo(0, body.dataset.y);
   }
 
-  if(!button.classList.contains('open')) {
-    button.classList.add('open');
+  if(!button.classList.contains('is-active')) {
+    button.classList.add('is-active');
   } else {
-    button.classList.remove('open');
+    button.classList.remove('is-active');
   }
+}
+
+function arrowWasClicked() {
+  const button = document.querySelector('#frota-menu');
+  const menuMain = document.querySelector('#button-menu');
+  const body = document.body;
+  const fotoModal = document.querySelector('.image-big');
+
+  if(!menuMain.classList.contains('frota-notShow')) {
+    menuMain.classList.add('frota-notShow');
+  } else {
+    menuMain.classList.remove('frota-notShow');
+  }
+
+  if(button.classList.contains('frota-notShow')) {
+    button.classList.remove('frota-notShow');
+  } else {
+    button.classList.add('frota-notShow');
+  }
+
+  if(body.classList.contains('foto-open')) {
+    body.classList.remove('foto-open');
+    fotoModal.classList.remove('open-foto-transform');
+    body.style.top = 0;
+    window.scrollTo(0, body.dataset.y);
+  }
+
+  if(!button.classList.contains('is-active')) {
+    button.classList.add('is-active');
+  } else {
+    button.classList.remove('is-active');
+  }
+
+  // let foto = "Frota-Rodobravo"
+  //   for(let i = 1; i < 13; i ++) {
+  //     let classe = `${foto}-${i}`;
+  //     if(fotoModal.classList.contains(classe)) {
+  //         fotoModal.classList.remove(classe);
+  //     }
+  //   }
 }
 
 
@@ -62,11 +102,23 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            <div className="menu-item">
+            {/* <div className="menu-item">
                 <button id="button-menu" className="menu-item__menu" type="button" onClick={buttonWasClicked}>
                   menu
                 </button>
-            </div>
+            </div> */}
+            <button id="button-menu" className="hamburger hamburger--collapse" type="button" onClick={buttonWasClicked}>
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+
+            <button id="frota-menu" className="hamburger hamburger--arrow frota-notShow" type="button" onClick={arrowWasClicked}>
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+
               <div className="menu-logo">
                 <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />
             </div>

@@ -13,12 +13,13 @@ class NavBarMobi extends Component {
 
   keepScrolling() {
     const body = document.body;
-    const button = document.querySelector('.menu-item > button');
+    const button = document.querySelector('#button-menu');
     const slideBar = document.querySelector('#menu-slide-bar');
-
+    button.classList.remove('is-active');
+    
     slideBar.classList.remove('open-nav-transform');
     body.classList.remove('menu-open');
-    button.classList.remove('open');
+    
     
     body.style.top = 0;
   }

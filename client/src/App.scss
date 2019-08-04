@@ -1,7 +1,7 @@
 //resources
 @import "../src/conf.scss";
 @import "../src/fonts.scss";
-
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 //pages
 @import "../src/components/main-components.scss";
@@ -21,3 +21,4 @@
 @import "../src/components/PinRodobravo/styles.scss";
 @import "../src/components/Alert/styles.scss";
 @import "../src/components/Form/styles.scss";
+@import "../src/components/FrotaGallery/styles.scss";

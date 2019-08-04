@@ -15,6 +15,8 @@ import FrotaRodobravo12 from '../../assets/imgs/frota/rodobravo-frota-12.jpg'
 class Frota extends Component {
   constructor(props) {
     super(props);
+    this.closeModal = this.closeModal.bind(this);
+    this.fotoWasClicked = this.fotoWasClicked.bind(this);
   }
 
     fotoWasClicked = (e) => { 
@@ -23,6 +25,16 @@ class Frota extends Component {
       const button = document.querySelector('#frota-menu');
       const fotoModal = document.querySelector('.image-big');
       let varScroll;
+      const mediaQuery = window.matchMedia("(min-width: 975px)");
+      
+      if(mediaQuery.matches) {
+        document.onkeydown = (evt) => {
+          evt = evt || window.event;
+          if (evt.keyCode == 27) {
+            this.closeModal();
+          }
+        }
+      }
     
       if(!body.classList.contains('foto-open')) {
         varScroll = window.scrollY;
@@ -116,157 +128,181 @@ class Frota extends Component {
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo1">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                 <img className="frota-gallery" src={FrotaRodobravo1} alt="teste" />
-                <span> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                </p>
-                </span>
+                <div className="foto-legend">
+                  <span> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                  <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                  </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo2">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo2} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo3">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo3} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo4">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo4} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo5">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo5} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo6">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo6} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo7">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo7} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo8">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo8} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo9">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo9} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo10">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo10} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
               
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo11">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo11} alt="teste"/>
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
               
               <div className="image-big__area__imgSpace" hidden id="FrotaRodobravo12">
                 <div className="image-big__area__imgSpace__close" onClick={this.closeModal}>X</div>
                   <img className="frota-gallery" src={FrotaRodobravo12} alt="teste" />
-                  <span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
-                  <p>
-                  #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
-                  #instagood #instame #instacool #programming #computer #ibmwatson
-                  </p>
-                </span>
+                  <div className="foto-legend">
+                    <span> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
+                    <p>
+                    #Science #ibm #tech #technology #future #culture #disruptive #think #picoftheday #photooftheday 
+                    #instagood #instame #instacool #programming #computer #ibmwatson
+                    </p>
+                  </span>
+                </div>
               </div>
 
             </div>

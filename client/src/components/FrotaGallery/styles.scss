@@ -27,25 +27,24 @@
                 flex-direction: column;
                 overflow: auto;
                 position: absolute;
-                background: #fff;
                 width: 100%;
                 top: 0;
                 left: 0;
                 padding: 0;
                 bottom: 0;
-
-                @media #{$BREAKPOINT-TABLET-LAND} {
-                   background: rgba(0,0,0,.9);
-                }
+                background: rgba(0,0,0,.9);
+            
 
                 &__imgSpace {
-                    height: 320px;
+                    width: 100%;
+                    margin: 20px auto 0 auto;
 
                     @media #{$BREAKPOINT-TABLET-LAND} {
                         position: relative;
                         max-width: 50%;
                         max-height: 50%;
-                        margin: 150px auto 600px auto;
+                        bottom: 10px;
+                        margin: 100px auto 0 auto;
                     }
 
                     img {
@@ -64,16 +63,18 @@
                     span {
                         max-width: 80%;
                         margin: 20px auto 0 auto;
-    
-                        @media #{$BREAKPOINT-TABLET-LAND} {
-                            color: white;
-                         }
-    
+                        color: white;
+
                         p {
                             font-size: 14px;
                             color: $DETAILS_BLUE;
                         }
     
+                    }
+
+                    .foto-legend {
+                        width: calc(100% - 40px);
+                        margin: 20px auto 0 auto;
                     }
                 }
 

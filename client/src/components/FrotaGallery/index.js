@@ -13,67 +13,77 @@ import FrotaRodobravo11 from '../../assets/imgs/frota/rodobravo-frota-11.jpg'
 import FrotaRodobravo12 from '../../assets/imgs/frota/rodobravo-frota-12.jpg'
 
 class Frota extends Component {
-  
-   fotoWasClicked(e) { 
-    const body = document.body;
-    const menuMain = document.querySelector('#button-menu');
-    const button = document.querySelector('#frota-menu');
-    const fotoModal = document.querySelector('.image-big');
-    const foto = document.querySelector('.image-big > .image-big__area > img ');
-    let varScroll;
-  
-    if(!body.classList.contains('foto-open')) {
-      varScroll = window.scrollY;
-      body.style.top = '-' + varScroll + 'px';
-      body.dataset.y = varScroll;
-      body.classList.add('foto-open');
-      fotoModal.classList.add('open-foto-transform');
-    } else {
-      body.classList.remove('foto-open');
-      fotoModal.classList.remove('open-foto-transform');
-      body.style.top = 0;
-      window.scrollTo(0, body.dataset.y);
-    }
-    
-    if(!menuMain.classList.contains('frota-notShow')) {
-      menuMain.classList.add('frota-notShow');
-    } else {
-      menuMain.classList.remove('frota-notShow');
-    }
-
-    if(button.classList.contains('frota-notShow')) {
-      button.classList.remove('frota-notShow');
-    } else {
-      button.classList.add('frota-notShow');
-    }
-
-    if(!button.classList.contains('is-active')) {
-      button.classList.add('is-active');
-    } else {
-      button.classList.remove('is-active');
-    }
-
-    // console.log();
-    foto.src = {e.target.classList}
-    // for(let i = 1; i < 13; i ++) {
-    //   this.foto = `${this.foto}${i}`;
-    //   if(e.target.classList.contains(classe)) {
-    //     if(!fotoModal.classList.contains(classe)) {
-    //       fotoModal.classList.add(classe);
-    //     } else {
-          
-    //     }
-    //   }
-    // }
-    
+  constructor(props) {
+    super(props);
   }
 
-  render() {
+    fotoWasClicked = (e) => { 
+      const body = document.body;
+      const menuMain = document.querySelector('#button-menu');
+      const button = document.querySelector('#frota-menu');
+      const fotoModal = document.querySelector('.image-big');
+      let varScroll;
+    
+      if(!body.classList.contains('foto-open')) {
+        varScroll = window.scrollY;
+        body.style.top = '-' + varScroll + 'px';
+        body.dataset.y = varScroll;
+        body.classList.add('foto-open');
+        fotoModal.classList.add('open-foto-transform');
+      } else {
+        body.classList.remove('foto-open');
+        fotoModal.classList.remove('open-foto-transform');
+        body.style.top = 0;
+        window.scrollTo(0, body.dataset.y);
+      }
+      
+      if(!menuMain.classList.contains('frota-notShow')) {
+        menuMain.classList.add('frota-notShow');
+      } else {
+        menuMain.classList.remove('frota-notShow');
+      }
+  
+      if(button.classList.contains('frota-notShow')) {
+        button.classList.remove('frota-notShow');
+      } else {
+        button.classList.add('frota-notShow');
+      }
+  
+      if(!button.classList.contains('is-active')) {
+        button.classList.add('is-active');
+      } else {
+        button.classList.remove('is-active');
+      }
+      
+      for(let i = 1; i < 13; i ++) {
+        let classe = `FrotaRodobravo${i}`;
+        const imgTag = document.querySelector(`#FrotaRodobravo${i}`);
+        this.foto = `${this.foto}${i}`;
+        console.log(e.target.classList.contains(classe));
+        
+        if(e.target.classList.contains(classe)) {
+          imgTag.removeAttribute("hidden")
+        }
+      }
+    }
+      
+  render(){
     return (
         <>  
           <div className="image-big">
             <div className="image-big__area">
-              <img alt="teste"/>
+              <img src={FrotaRodobravo1}  hidden alt="teste" id="FrotaRodobravo1"/>
+              <img src={FrotaRodobravo2}  hidden alt="teste" id="FrotaRodobravo2"/>
+              <img src={FrotaRodobravo3}  hidden alt="teste" id="FrotaRodobravo3"/>
+              <img src={FrotaRodobravo4}  hidden alt="teste" id="FrotaRodobravo4"/>
+              <img src={FrotaRodobravo5}  hidden alt="teste" id="FrotaRodobravo5"/>
+              <img src={FrotaRodobravo6}  hidden alt="teste" id="FrotaRodobravo6"/>
+              <img src={FrotaRodobravo7}  hidden alt="teste" id="FrotaRodobravo7"/>
+              <img src={FrotaRodobravo8}  hidden alt="teste" id="FrotaRodobravo8"/>
+              <img src={FrotaRodobravo9}  hidden alt="teste" id="FrotaRodobravo9"/>
+              <img src={FrotaRodobravo10}  hidden alt="teste" id="FrotaRodobravo10"/>
+              <img src={FrotaRodobravo11}  hidden alt="teste" id="FrotaRodobravo11"/>
+              <img src={FrotaRodobravo12}  hidden alt="teste" id="FrotaRodobravo12"/>
               <span> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Donec quis dapibus quam. Maecenas molestie tortor vitae nunc mattis
@@ -99,7 +109,7 @@ class Frota extends Component {
             <div onClick={this.fotoWasClicked} className="FrotaRodobravo12"></div>
           </section>
         </>
-    );
+    )
   }
 }
 export default Frota;

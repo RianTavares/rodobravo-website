@@ -81,13 +81,14 @@ function arrowWasClicked() {
     button.classList.remove('is-active');
   }
 
-  // let foto = "Frota-Rodobravo"
-  //   for(let i = 1; i < 13; i ++) {
-  //     let classe = `${foto}-${i}`;
-  //     if(fotoModal.classList.contains(classe)) {
-  //         fotoModal.classList.remove(classe);
-  //     }
-  //   }
+  let foto = "FrotaRodobravo"
+  for(let i = 1; i < 13; i ++) {
+    let classe = `${foto}${i}`;
+    const imgTag = document.querySelector(`#FrotaRodobravo${i}`);
+    if(!imgTag.hasAttribute("hidden")) {
+        imgTag.setAttribute("hidden", true);
+    }
+  }
 }
 
 

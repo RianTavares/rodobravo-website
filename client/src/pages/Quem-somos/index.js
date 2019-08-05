@@ -6,6 +6,11 @@ import PageHeader from '../../components/PageHeader'
 import Media from "react-media";
 
 class Rodobravo extends Component {
+
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+
   render() {
     return (
       <React.Fragment>

@@ -63,7 +63,9 @@ class NavBarMobi extends Component {
 
                       <div id="footer-info">
                         <div className="footer-info__button">
-                          <button variant="contained" className="footer-info__button__contact"> FALE CONOSCO </button>
+                          <NavLink exact onClick={this.keepScrolling} to='/contato'>
+                            <button variant="contained" className="footer-info__button__contact"> FALE CONOSCO </button>
+                          </NavLink>
                         </div>
                       </div>
                     </div>

@@ -121,7 +121,7 @@
                 height: 45px;
                 margin: 25px auto 0 auto;
 
-                .footer-info__button__contact {
+                &__contact {
                     width: 180px;
                     height: 100%;
                     background-color: $DETAILS_BLUE;
@@ -129,6 +129,15 @@
                     font-family: Rival-Sans-Bold;
                     color: #fff;
                     font-size: 18px;
+                    border-radius: 6px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                    outline: 0px auto -webkit-focus-ring-color;
+                }
+
+                &__contact:hover {
+                    background-color: #001C41;
                 }
             }
 

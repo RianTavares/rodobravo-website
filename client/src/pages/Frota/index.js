@@ -7,6 +7,11 @@ import Media from "react-media"
 import FrotaGallery from "../../components/FrotaGallery"
 
 class Frota extends Component {
+  
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+  
   render() {
     return (
       <React.Fragment>

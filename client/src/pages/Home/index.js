@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import MenuAppBar from '../../components/NavBarMenu'
 import MenuBarMobi from '../../components/NavBarMobi'
 import Footer from '../../components/Footer'
@@ -9,13 +9,18 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import mapa from "../../assets/imgs/mapa-operacao.jpg"
-import support from "../../assets/imgs/support.png";
-import antenna from "../../assets/imgs/antenna.png";
-import truck from "../../assets/imgs/delivery-truck.png";
+import support from "../../assets/imgs/support.png"
+import antenna from "../../assets/imgs/antenna.png"
+import truck from "../../assets/imgs/delivery-truck.png"
+import { NavLink } from 'react-router-dom'
 
 
 class Home extends Component {
   
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+
   render() {
     return (
     <React.Fragment>
@@ -34,7 +39,9 @@ class Home extends Component {
                     Através da nossa página de contato você pode realizar cotação de frete online, 
                     tirar suas dúvidas ou enviar críticas e sugestões.
                   </span>
-                  <button className="page-content__top__item__contact__item__button">Saiba mais</button>
+                  <NavLink exact to='/contato'>
+                    <button className="page-content__top__item__contact__item__button">Saiba mais</button>
+                  </NavLink>
                 </div>
                 <div className="page-content__top__item__contact__social">
                   <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
@@ -77,8 +84,10 @@ class Home extends Component {
                     Prestamos serviços de tranferência para os mais diversos clientes
                     e visamos atender ao mercado farmacêutico.
                   </span>
-                <button className="page-content__service-cards__list__item__button">Saiba mais</button>
-                <div className="page-content__service-cards__list__item__card"></div>
+                  <NavLink exact to='/servicos'>
+                    <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+                  </NavLink>
+                  <div className="page-content__service-cards__list__item__card"></div>
               </section>
               <section className="page-content__service-cards__list__item">
                 <div className="page-content__service-cards__list__item__circle">
@@ -87,7 +96,9 @@ class Home extends Component {
                   <span>
                   Monitoramento e rastreio 24h, com a mais alta tecnologia do mercado mantendo nossos clientes seguros.
                   </span>
-                <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+                <NavLink exact to='/rastreio'>
+                  <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+                </NavLink>
                 <div className="page-content__service-cards__list__item__card"></div>
               </section>
               <section className="page-content__service-cards__list__item">
@@ -97,7 +108,9 @@ class Home extends Component {
                 <span>
                   Nossa frota é bem capacitada com os mais diversos tipos de caminões a disposição dos nosso clientes.
                 </span>
-              <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+              <NavLink exact to='/frota'>
+                <button className="page-content__service-cards__list__item__button">Saiba mais</button>
+              </NavLink>
               <div className="page-content__service-cards__list__item__card secs"></div>
             </section>
             </section>

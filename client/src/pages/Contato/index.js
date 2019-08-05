@@ -11,6 +11,11 @@ import Form from '../../components/Form'
 import Alert from '../../components/Alert'
 
 class Contato extends Component {
+
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+
   render() {
     return (
       <React.Fragment>

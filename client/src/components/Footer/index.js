@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/imgs/logo-branca.png';
+import { NavLink } from 'react-router-dom'
+import Logo from '../../assets/imgs/logo-branca.png'
 
 
 
@@ -30,7 +30,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__button">
-          <button variant="contained" className="footer__button__contact"> FALE CONOSCO </button>
+          <NavLink exact to='/contato'>
+            <button variant="contained" className="footer__button__contact"> FALE CONOSCO </button>
+          </NavLink> 
         </div>
         <div className="footer__divider">
           <hr className="footer__divider__line"/>

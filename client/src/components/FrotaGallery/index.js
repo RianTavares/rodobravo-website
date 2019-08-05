@@ -30,7 +30,7 @@ class Frota extends Component {
       if(mediaQuery.matches) {
         document.onkeydown = (evt) => {
           evt = evt || window.event;
-          if (evt.keyCode == 27) {
+          if (evt.keyCode === 27) {
             this.closeModal();
           }
         }

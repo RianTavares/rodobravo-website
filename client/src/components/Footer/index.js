@@ -50,7 +50,7 @@ export default function Footer() {
           <NavLink exact className='footer__menu__item' to='/servicos'>SERVIÇOS</NavLink>
           <NavLink exact className='footer__menu__item' to='/contato'>CONTATO</NavLink>
         </section>
-        <span className="footer__copyright">Copyright 2019 | Desenvolvido por GR Studio </span>
+        <span className="footer__copyright">Copyright 2019 | Desenvolvido por Rian Tavares</span>
       </footer>
     </React.Fragment>
   );

@@ -15,8 +15,8 @@ class Form extends Component {
         return (
            <section className="formAlert success notShow">
                <div className="formAlert__close" onClick={this.closeAlert}>X</div>
-               <h1 className="formAlert__title"></h1>
-               <p className="formAlert__text"></p>
+               <h1 className="formAlert__title"> </h1>
+               <p className="formAlert__text"> </p>
            </section>
         )
     }

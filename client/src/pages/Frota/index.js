@@ -29,6 +29,25 @@ class Frota extends Component {
         </Media>
         <div className="site-content">
           <div className="page-content">
+            <span>
+            A <strong>Rodobravo</strong> entende do seu negócio e fornece a solução que sua empresa precisa. 
+            Equipada com uma frota vasta e preparada para o transporte de cargas secas, frigorificadas, cargas 
+            leves e de produtos farmacêuticos. 
+            <br />
+            <br />
+            Investimos constantemente na renovação da frota e em atualizações tecnológicas atendendo os princípios de segurança,
+             durabilidade e produtividade. Além disso, possuímos processos de manutenções preventivas realizadas por um corpo técnico qualificado.
+            Nossas carretas possuem a tecnologia pneumática com válvulas reguladoras de compensação, viabilizando a 
+            estabilidade do veículo e da carga, mesmo com deformidade na rodovia, amortecendo os impactos em decorrência das estradas, 
+            minimizando consideravelmente avarias.
+            <br />
+            <br />
+            Veja abaixo algumas opções que disponibilizamos aos nossos clientes. Se desejar conhecer mais nossa Frota faça uma 
+            cotação com a gente e conheça nosso portfólio.
+            <br />
+            <br />
+            </span>
+
             <FrotaGallery />
           </div>
         </div>

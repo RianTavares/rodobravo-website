@@ -34,28 +34,36 @@ class Contato extends Component {
         <div className="site-content">
           <div className="page-content">
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
-              ultricies non est nec, malesuada interdum augue. 
+              Através dos nossos canais de comunicação vislumbramos facilitar o contato entre nós e todos os
+              pontos crucias em nossas operações (clientes, prestadores de serviço, parceiros, etc).
+              Utilize qualquer método abaixo para falar conosco e nos encontre também nas redes sociais.
             </span>
 
             <h1 className="titles">Nossa Matriz</h1>
             <div className="page-content__google-map" style={{width: '100%', height: '400px'}}>
               <SimpleMap/>
             </div>
+            <p className="contact-adress">Rua Madre Maria José, 21 - Pavuna, Rio de Janeiro - RJ, 21535-230, Brasil</p>
             <div className="page-content__contact-card">
               <h1 className="titles">Atendimento</h1>
               <div >
                 <span>
-                  De segunda a sexta das 9h às 18h através dos nossos telefones.
+                  Se preferir entre em contato conosco por meio dos nossos telefones, 
+                  de <strong>segunda</strong> a <strong>sexta</strong> das <strong>8h</strong> às <strong>17h</strong>, que iremos atendê-lo com prazer.
                 </span>
               <div className="page-content__contact-card__item">
                 <FontAwesomeIcon icon={faPhone} />
-                <span>(21) 2474-6441</span>
+                <span>(21) 2474-6441 / 00000000</span>
               </div>
             </div>
           </div>
         
             <h1 className="titles">Fale Conosco</h1>
+            <span>
+              preencha o formulário abaixo, 
+              para realizar cotação de frete online, tirar suas dúvidas ou enviar críticas e sugestões.
+              Teremos o maior prazer em atendê-lo.
+            </span>
             <Alert />
             <Form />
             

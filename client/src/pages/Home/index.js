@@ -9,9 +9,9 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import mapa from "../../assets/imgs/mapa-operacao.jpg"
-import support from "../../assets/imgs/support.png"
-import antenna from "../../assets/imgs/antenna.png"
 import truck from "../../assets/imgs/delivery-truck.png"
+import frete from "../../assets/imgs/icon-frete3.png"
+import track from "../../assets/imgs/icon-monitoring.png"
 import { NavLink } from 'react-router-dom'
 
 
@@ -70,7 +70,8 @@ class Home extends Component {
               </div>
               <div className="page-content__top__item span-map">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Atualmente atuamos em operações que cobrem toda região Sudeste e parte do Centro-Oeste.
+                    Visamos expandir e formar unidades operacionais nessas regiões próximas às bases de nossos clientes.
                   </span>
                 </div>
             </div>
@@ -78,11 +79,10 @@ class Home extends Component {
             <section className="page-content__service-cards__list">
               <section className="page-content__service-cards__list__item top">
                 <div className="page-content__service-cards__list__item__circle">
-                  <img src={support} alt="Serviços de transferência, cargas secas e resfriadas Rodobravo"/>
+                  <img src={frete} alt="Serviços de transferência, cargas secas e resfriadas Rodobravo"/>
                 </div>
                   <span>
-                    Prestamos serviços de tranferência para os mais diversos clientes
-                    e visamos atender ao mercado farmacêutico.
+                   Fretes completos, parciais, transferências secas e frigorificadas. Conheça mais sobre os nossos serviços!
                   </span>
                   <NavLink exact to='/servicos'>
                     <button className="page-content__service-cards__list__item__button">Saiba mais</button>
@@ -91,10 +91,10 @@ class Home extends Component {
               </section>
               <section className="page-content__service-cards__list__item">
                 <div className="page-content__service-cards__list__item__circle">
-                  <img src={antenna} alt="Rodobravo gerenciamento de risco e monitoramento 24 horas"/>
+                  <img src={track} alt="Rodobravo gerenciamento de risco e monitoramento 24 horas"/>
                 </div>
                   <span>
-                  Monitoramento e rastreio 24h, com a mais alta tecnologia do mercado mantendo nossos clientes seguros.
+                  Rastreio e monitoramento 24h, com a mais alta tecnologia do mercado mantendo sua carga segura.
                   </span>
                 <NavLink exact to='/rastreio'>
                   <button className="page-content__service-cards__list__item__button">Saiba mais</button>
@@ -106,7 +106,7 @@ class Home extends Component {
                 <img src={truck} alt="Frota Rodobravo em bom estado e equipe capacitada" />
               </div>
                 <span>
-                  Nossa frota é bem capacitada com os mais diversos tipos de caminões a disposição dos nosso clientes.
+                  Uma frota extensa a sua disposição e capacitada, levando o que importa até você!
                 </span>
               <NavLink exact to='/frota'>
                 <button className="page-content__service-cards__list__item__button">Saiba mais</button>

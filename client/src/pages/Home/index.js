@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import mapa from "../../assets/imgs/mapa-operacao.jpg"
+import mapa from "../../assets/imgs/rodobravo-atuacao.png"
 import truck from "../../assets/imgs/delivery-truck.png"
 import frete from "../../assets/imgs/icon-frete3.png"
 import track from "../../assets/imgs/icon-monitoring.png"
@@ -70,7 +70,7 @@ class Home extends Component {
               </div>
               <div className="page-content__top__item span-map">
                   <span>
-                    Atualmente atuamos em operações que cobrem toda região Sudeste e parte do Centro-Oeste.
+                    Atualmente atuamos em operações que cobrem toda região Sudeste e parte da região Centro-Oeste.
                     Visamos expandir e formar unidades operacionais nessas regiões próximas às bases de nossos clientes.
                   </span>
                 </div>

@@ -41,7 +41,7 @@ class Rodobravo extends Component {
              <strong>Cristina Ribeiro</strong>, empreendedora por natureza, viu a oportunidade de entrar no ramo de transportes e 
               ofertar um serviço diferenciado, lidando com os problemas do transporte rodoviário do Brasil, 
               investindo em frotas capacitadas, fazendo uma melhor utilização das tecnologias e contratando 
-              motoristas capacitados. Esses são pilares que sempre fizeram parte da <strong>Rodobravo Transportes</strong>, constituída neste mesmo 
+              motoristas qualificados. Esses são pilares que sempre fizeram parte da <strong>Rodobravo Transportes</strong>, constituída neste mesmo 
               ano por Cristina, que desde então preza por garantir a excelência no cumprimento de prazos e pela 
               preservação das mercadorias entregando com qualidade e tornando a vida de nossos clientes mais simples!
             </span>
@@ -56,10 +56,10 @@ class Rodobravo extends Component {
             </div>
 
             <span className="page-content__about-text">  
-            Em meio a este cenário a história da <strong>Rodobravo</strong> começou com apenas um veículo, 
-            o icônico e que estará para sempre nos corações de nossa empresa, VW 13.180. Após alguns anos nosso trabalho 
-            começou a dar frutos e a partir do ano de <strong>2003</strong> passamos a contar 30 veículos próprios, 
-            atendendo agora às necessidades de cada cliente.
+              Em meio a este cenário a história da <strong>Rodobravo</strong> começou com apenas um veículo, 
+              o icônico e que estará para sempre nos corações de nossa empresa, VW 13.180. Após três anos, todo planejamento, 
+              investimentos e trabalho duro começaram a dar frutos e a partir do ano de <strong>2003</strong> passamos a contar 30 veículos próprios, 
+              atendendo agora às necessidades de cada cliente.
 
 
             </span>
@@ -74,7 +74,7 @@ class Rodobravo extends Component {
             <br />
             <span>  
               Em <strong>2012</strong> foi adquirido o terreno na rua Madre Maria José, próximo ao KM 116 da 
-              Rodovia Presidente Dutra, onde atualmente está sediada a Matriz da empresa 
+              Rodovia Presidente Dutra no Rio de Janeiro, onde atualmente está sediada a matriz da empresa 
               provida de oficina de manutenção, área administrativa e local para estacionamento da frota.  
             </span>
             <br />
@@ -97,10 +97,10 @@ class Rodobravo extends Component {
             </div>
              <section className="last">
               <span className="page-content__about-text">  
-                Tempos passaram e a <strong>Rodobravo Transportes</strong> continuou crescendo, investindo para mitigar os problemas do 
+                O Tempo passou e nesses mais de 17 anos de experiência a <strong>Rodobravo Transportes</strong> continuou crescendo, investindo para mitigar os problemas do 
                 transporte rodoviário e desenvolvendo sua história de sucesso ao passar dos anos. Atualmente a 
-                <strong> Rodobravo</strong> conta com mais de 65 veículos próprios e atende não só o Rio de Janeiro, mas sim toda 
-                região Sudeste e parte da Centro-Oeste. 
+                <strong> Rodobravo</strong> conta com mais de 100 veículos em sua frota e atende não só o Rio de Janeiro, mas sim toda 
+                região Sudeste e parte da região Centro-Oeste. 
               </span>
               <br />
               <br />

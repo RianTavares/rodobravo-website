@@ -91,6 +91,14 @@ function arrowWasClicked() {
   }
 }
 
+function keepScrolling() {
+  const body = document.body;
+
+  if(body.classList.contains('foto-open')) {
+    body.classList.remove('foto-open');
+    body.style.top = 0;
+  }
+}
 
 HideOnScroll.propTypes = {
   children: PropTypes.node.isRequired
@@ -124,12 +132,12 @@ export default function HideAppBar(props) {
                 <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />
             </div>
             <div className="menu-desk">
-              <NavLink exact className='menu-desk__item' to='/' activeClassName="underline">INÍCIO</NavLink>
-              <NavLink exact className='menu-desk__item' to='/rodobravo' activeClassName="underline">QUEM SOMOS</NavLink>
-              <NavLink exact className='menu-desk__item' to='/frota' activeClassName="underline">FROTA</NavLink>
-              <NavLink exact className='menu-desk__item' to='/rastreio' activeClassName="underline">MONITORAMENTO</NavLink>
-              <NavLink exact className='menu-desk__item' to='/servicos' activeClassName="underline">SERVIÇOS</NavLink>
-              <NavLink exact className='menu-desk__item' to='/contato' activeClassName="underline">CONTATO</NavLink>
+              <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/' activeClassName="underline">INÍCIO</NavLink>
+              <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/rodobravo' activeClassName="underline">QUEM SOMOS</NavLink>
+              <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/frota' activeClassName="underline">FROTA</NavLink>
+              <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/rastreio' activeClassName="underline">MONITORAMENTO</NavLink>
+              <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/servicos' activeClassName="underline">SERVIÇOS</NavLink>
+              <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/contato' activeClassName="underline">CONTATO</NavLink>
             </div>
             <div className="div-empty"></div>
           </Toolbar>

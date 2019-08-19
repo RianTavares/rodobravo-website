@@ -29,10 +29,14 @@ class Rastreio extends Component {
         <div className="site-content">
           <div className="page-content">
             <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
-            ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl justo, 
-            ultricies non est nec, malesuada interdum augue. Nam vitae diam justo. Curabitur ut euismod nulla. Nam sed pellentesque ipsum.
+              A <strong>Rodobravo Transportes</strong> acredita que transportar com agilidade e segurança é um dos fatores mais 
+              importantes na gestão dos processos de transferência de cargas, por isso nossa frota é rastreada 
+              com as melhores marcas do mercado e mantemos um rigoroso e eficiente sistema com estrutura própria 
+              de monitoramento em tempo real dos veículos, atendendo aos princípios de segurança e rastreabilidade. 
+              Através destas tecnologias de monitoramento toda frota é avaliada desde seu consumo médio, perfil de 
+              condução do motorista e limitações de velocidade. Queremos garantir a integridade dos produtos transportados, 
+              a segurança nas estradas, a valorização da vida e minimizar impactos ambientais.
+
             </span>
             
             <section className="page-content__logos last">

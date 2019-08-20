@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "./styles.scss";
-import alegra from "../../assets/imgs/partners/alegra.png";
+import casaVideo from "../../assets/imgs/partners/casaevideo.png";
 import assai from "../../assets/imgs/partners/assai.png";
-import extra from "../../assets/imgs/partners/extra.png";
+import gpa from "../../assets/imgs/partners/gpa.png";
 import leader from "../../assets/imgs/partners/leader.png";
+import prix from "../../assets/imgs/partners/prix.png";
+import redeDor from "../../assets/imgs/partners/rede-dor.png";
+import itambe from "../../assets/imgs/partners/itambe.png";
 
 const PartnersSlide = () => {
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
@@ -27,17 +30,26 @@ const PartnersSlide = () => {
     return (
         <div className="container">
           <Slider {...settings}>
-            <div>
-              <img src={alegra} alt='alegra'/>
+            <div className="partners-logo">
+              <img src={assai} alt='alegra'/>
             </div>
-            <div>
-              <img src={extra} alt='extra'/>
+            <div className="partners-logo">
+              <img src={gpa} alt='extra'/>
             </div>
-            <div>
-              <img src={assai} alt='assai'/>
+            <div className="partners-logo">
+              <img src={prix} alt='assai'/>
             </div>
-            <div>
-              <img src={leader} alt='leader'/>
+            <div className="partners-logo">
+              <img src={itambe} alt='leader'/>
+            </div>
+            <div className="partners-logo">
+              <img src={casaVideo} alt='extra'/>
+            </div>
+            <div className="partners-logo">
+              <img src={leader} alt='assai'/>
+            </div>
+            <div className="partners-logo">
+              <img src={redeDor} alt='leader'/>
             </div>
           </Slider>
         </div>

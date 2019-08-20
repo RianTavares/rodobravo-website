@@ -43,7 +43,7 @@
     padding: 10px;
   }
   .slick-slide img {
-    border: 5px solid #fff;
+    border: unset;
     display: block;
     margin: auto;
   }
@@ -63,11 +63,15 @@
     width: 60px;
     height: 45px;
   }
-  .slick-thumb li img {
-    filter: grayscale(100%);
+  .slick-slide .partners-logo img {
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      filter: grayscale(100%);
+    }
   }
-  .slick-thumb li.slick-active img {
-    filter: grayscale(0%);
+  .slick-slide .partners-logo img:hover {
+    @media #{$BREAKPOINT-TABLET-LAND} {
+      filter: grayscale(0%);
+    }
   }
   @media (max-width: 768px) {
     h3 {
@@ -107,4 +111,8 @@
 
   .slick-dots li.slick-active button:before {
     color: $BLUE_RODOBRAVO;
+  }
+
+  .partners-logo {
+    outline: 0px auto -webkit-focus-ring-color;
   }

@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import mapa from "../../assets/imgs/rodobravo-atuacao.png"
+import mapa from "../../assets/imgs/rodobravo-atuacao3.png"
 import truck from "../../assets/imgs/delivery-truck.png"
 import frete from "../../assets/imgs/icon-frete3.png"
 import track from "../../assets/imgs/icon-monitoring.png"

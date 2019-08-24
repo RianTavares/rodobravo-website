@@ -8,36 +8,14 @@ const Teste = () => {
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   const openLightbox = useCallback((event, { photo, index }) => {
-    const body = document.body;
-    let varScroll;
     setCurrentImage(index);
     setViewerIsOpen(true);
-
-
-     if(!body.classList.contains('teste-open')) {
-        varScroll = window.scrollY;
-        body.style.top = '-' + varScroll + 'px';
-        body.dataset.y = varScroll;
-        body.classList.add('teste-open');
-      } else {
-        body.classList.remove('teste-open');
-        body.style.top = 0;
-        window.scrollTo(0, body.dataset.y);
-      }
 
   }, []);
 
   const closeLightbox = () => {
-    const body = document.body;
-
     setCurrentImage(0);
     setViewerIsOpen(false);
-
-    if(body.classList.contains('teste-open')) {
-        body.classList.remove('teste-open');
-        body.style.top = 0;
-        window.scrollTo(0, body.dataset.y);
-    }
 }
 
   return (

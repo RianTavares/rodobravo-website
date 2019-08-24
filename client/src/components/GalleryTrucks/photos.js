@@ -1,40 +1,38 @@
-import FrotaRodobravo1 from '../../assets/imgs/frota/rodobravo-frota-1.jpeg'
-import FrotaRodobravo2 from '../../assets/imgs/frota/rodobravo-frota-2.jpg'
-import FrotaRodobravo3 from '../../assets/imgs/frota/rodobravo-frota-3.jpg'
-import FrotaRodobravo4 from '../../assets/imgs/frota/rodobravo-frota-4.jpeg'
-import FrotaRodobravo5 from '../../assets/imgs/frota/rodobravo-frota-5.jpeg'
-import FrotaRodobravo6 from '../../assets/imgs/frota/rodobravo-frota-6.jpg'
-import FrotaRodobravo7 from '../../assets/imgs/frota/rodobravo-frota-7.jpeg'
-import FrotaRodobravo8 from '../../assets/imgs/frota/rodobravo-frota-8.jpeg'
-import FrotaRodobravo9 from '../../assets/imgs/frota/rodobravo-frota-9.jpeg'
-import FrotaRodobravo10 from '../../assets/imgs/frota/rodobravo-frota-10.jpg'
-import FrotaRodobravo11 from '../../assets/imgs/frota/rodobravo-frota-11.jpg'
+import FrotaRodobravo1 from '../../assets/imgs/frota/1.jpg'
+import FrotaRodobravo2 from '../../assets/imgs/frota/2.jpg'
+import FrotaRodobravo3 from '../../assets/imgs/frota/3.jpg'
+import FrotaRodobravo4 from '../../assets/imgs/frota/4.jpg'
+import FrotaRodobravo5 from '../../assets/imgs/frota/5.jpg'
+import FrotaRodobravo6 from '../../assets/imgs/frota/6.jpg'
+import FrotaRodobravo7 from '../../assets/imgs/frota/7.jpg'
+import FrotaRodobravo8 from '../../assets/imgs/frota/10.jpg'
+import FrotaRodobravo9 from '../../assets/imgs/frota/11.jpg'
 
 export const photos = [
     {
-      src: `${FrotaRodobravo11}`,
+      src: `${FrotaRodobravo1}`,
       width: 4,
       height: 3
     },
     {
-      src: `${FrotaRodobravo10}`,
-      width: 4,
-      height: 3
+      src: `${FrotaRodobravo2}`,
+      width: 1,
+      height: 1
     },
     {
       src: `${FrotaRodobravo3}`,
-      width: 4,
-      height: 3
+      width: 3,
+      height: 4
     },
     {
       src: `${FrotaRodobravo4}`,
-      width: 4,
-      height: 3
+      width: 3,
+      height: 4
     },
     {
       src: `${FrotaRodobravo5}`,
-      width: 4,
-      height: 3
+      width: 3,
+      height: 4
     },
     {
       src: `${FrotaRodobravo6}`,
@@ -43,8 +41,8 @@ export const photos = [
     },
     {
       src: `${FrotaRodobravo7}`,
-      width: 4,
-      height: 3
+      width: 3,
+      height: 4
     },
     {
       src: `${FrotaRodobravo8}`,

@@ -4,7 +4,7 @@ import MenuBarMobi from '../../components/NavBarMobi'
 import Footer from '../../components/Footer'
 import PageHeader from '../../components/PageHeader'
 import Media from "react-media"
-import Teste from '../../components/Teste'
+import GalleryTrucks from '../../components/GalleryTrucks'
 class Frota extends Component {
   
   componentDidMount(){
@@ -46,7 +46,7 @@ class Frota extends Component {
             <br />
             <br />
             </span>
-              <Teste/>
+              <GalleryTrucks />
           </div>
         </div>
         <Footer/>

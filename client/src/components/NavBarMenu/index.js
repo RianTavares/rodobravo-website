@@ -34,9 +34,11 @@ function buttonWasClicked() {
     varScroll = window.scrollY;
     body.style.top = '-' + varScroll + 'px';
     body.dataset.y = varScroll;
+    button.classList.add('open');
     body.classList.add('menu-open');
     slideBar.classList.add('open-nav-transform');
   } else {
+    button.classList.remove('open');
     body.classList.remove('menu-open');
     slideBar.classList.remove('open-nav-transform');
     body.style.top = 0;
@@ -47,47 +49,6 @@ function buttonWasClicked() {
     button.classList.add('is-active');
   } else {
     button.classList.remove('is-active');
-  }
-}
-
-function arrowWasClicked() {
-  const button = document.querySelector('#frota-menu');
-  const menuMain = document.querySelector('#button-menu');
-  const body = document.body;
-  const fotoModal = document.querySelector('.image-big');
-
-  if(!menuMain.classList.contains('frota-notShow')) {
-    menuMain.classList.add('frota-notShow');
-  } else {
-    menuMain.classList.remove('frota-notShow');
-  }
-
-  if(button.classList.contains('frota-notShow')) {
-    button.classList.remove('frota-notShow');
-  } else {
-    button.classList.add('frota-notShow');
-  }
-
-  if(body.classList.contains('foto-open')) {
-    body.classList.remove('foto-open');
-    fotoModal.classList.remove('open-foto-transform');
-    body.style.top = 0;
-    window.scrollTo(0, body.dataset.y);
-  }
-
-  if(!button.classList.contains('is-active')) {
-    button.classList.add('is-active');
-  } else {
-    button.classList.remove('is-active');
-  }
-
-  for(let i = 1; i < 13; i ++) {
-    let classe = `FrotaRodobravo${i}`;
-    const imgTag = document.querySelector(`#${classe}`);
-    
-    if(!imgTag.hasAttribute("hidden")) {
-        imgTag.setAttribute("hidden", true);
-    }
   }
 }
 
@@ -111,22 +72,11 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            {/* <div className="menu-item">
+            <div className="menu-item">
                 <button id="button-menu" className="menu-item__menu" type="button" onClick={buttonWasClicked}>
                   menu
                 </button>
-            </div> */}
-            <button id="button-menu" className="hamburger hamburger--collapse" type="button" onClick={buttonWasClicked}>
-              <span className="hamburger-box">
-                <span className="hamburger-inner"></span>
-              </span>
-            </button>
-
-            <button id="frota-menu" className="hamburger hamburger--arrow frota-notShow" type="button" onClick={arrowWasClicked}>
-              <span className="hamburger-box">
-                <span className="hamburger-inner"></span>
-              </span>
-            </button>
+            </div>
 
               <div className="menu-logo">
                 <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />

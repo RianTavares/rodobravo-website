@@ -95,13 +95,8 @@
 }
 
 #button-menu {
-        @media #{$BREAKPOINT-TABLET-LAND} {
-            display: none !important;
-        }
+    @media #{$BREAKPOINT-TABLET-LAND} {
+        display: none !important;
     }
-
-    #frota-menu {
-        @media #{$BREAKPOINT-TABLET-LAND} {
-            display: none !important;
-        }
-    }
+}
+    

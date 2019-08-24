@@ -70,7 +70,7 @@ class Home extends Component {
               </div>
               <div className="page-content__top__item span-map">
                   <span>
-                    Atualmente atuamos em operações que cobrem toda região Sudeste e parte da região Centro-Oeste.
+                    teste stg em operações que cobrem toda região Sudeste e parte da região Centro-Oeste.
                     Visamos expandir e formar unidades operacionais nessas regiões próximas às bases de nossos clientes.
                   </span>
                 </div>

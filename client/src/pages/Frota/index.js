@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import PageHeader from '../../components/PageHeader'
 import Media from "react-media"
 import GalleryTrucks from '../../components/GalleryTrucks'
+
 class Frota extends Component {
   
   componentDidMount(){

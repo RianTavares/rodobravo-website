@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
-import MenuAppBar from '../../components/NavBarMenu'
-import MenuBarMobi from '../../components/NavBarMobi'
-import Footer from '../../components/Footer'
-import PageHeader from '../../components/PageHeader'
-import Media from "react-media"
-import GalleryTrucks from '../../components/GalleryTrucks'
+import React, { Component } from 'react';
+import MenuAppBar from '../../components/NavBarMenu';
+import MenuBarMobi from '../../components/NavBarMobi';
+import Footer from '../../components/Footer';
+import PageHeader from '../../components/PageHeader';
+import Media from "react-media";
+import GalleryTrucks from '../../components/GalleryTrucks';
+import { NavLink } from 'react-router-dom';
+
 
 class Frota extends Component {
   
@@ -42,8 +44,8 @@ class Frota extends Component {
             minimizando consideravelmente avarias.
             <br />
             <br />
-            Veja abaixo algumas opções que disponibilizamos aos nossos clientes. Se desejar conhecer mais nossa Frota faça uma 
-            cotação com a gente e conheça nosso portfólio.
+            Veja abaixo algumas opções que disponibilizamos aos nossos clientes. Se desejar conhecer mais nossa frota <NavLink to='/contato'>faça uma
+            cotação</NavLink> com a gente e conheça nosso portfólio.
             <br />
             <br />
             </span>

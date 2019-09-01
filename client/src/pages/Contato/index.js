@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
-import MenuAppBar from '../../components/NavBarMenu'
-import MenuBarMobi from '../../components/NavBarMobi'
-import Footer from '../../components/Footer'
-import PageHeader from '../../components/PageHeader'
-import Media from "react-media"
-import SimpleMap from '../../components/Map'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
-import Form from '../../components/Form'
-import Alert from '../../components/Alert'
+import React, { Component } from 'react';
+import MenuAppBar from '../../components/NavBarMenu';
+import MenuBarMobi from '../../components/NavBarMobi';
+import Footer from '../../components/Footer';
+import PageHeader from '../../components/PageHeader';
+import Media from "react-media";
+import SimpleMap from '../../components/Map';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import Form from '../../components/Form';
+import Alert from '../../components/Alert';
+import {Helmet} from "react-helmet";
 
 class Contato extends Component {
 
@@ -19,6 +20,13 @@ class Contato extends Component {
   render() {
     return (
       <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rodobravo - Contato</title>
+        <link rel="canonical" href="https://rodobravotransportes.com.br/contato" />
+        <meta name="description" content="Entre em contato com a Rodobravo Transportes através dos nossos telefones, 
+          formulário de contato ou através de nossas redes sociais."></meta>
+      </Helmet>
       <MenuAppBar/>
       <MenuBarMobi />
       <section className="App">
@@ -53,7 +61,7 @@ class Contato extends Component {
                 </span>
               <div className="page-content__contact-card__item">
                 <FontAwesomeIcon icon={faPhone} />
-                <span>(21) 2474-6441 / 00000000</span>
+                <span><a href="tel:2124746441">(21) 2474-6441</a> / <a href="tel:21964934138">(21) 96493-4138</a></span>
               </div>
             </div>
           </div>

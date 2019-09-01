@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
 import Media from "react-media";
 import { NavLink } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 class Servicos extends Component {
 
@@ -15,6 +16,14 @@ class Servicos extends Component {
   render() {
     return (
       <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rodobravo - Serviços</title>
+        <link rel="canonical" href="https://rodobravotransportes.com.br/servicos" />
+        <meta name="description" content="A Rodobravo Transportes ofereçe serviços como Fretes completos, parciais, 
+        transferências secas e frigorificadas. Transportarmos produtos perecíveis, fármacos e outros produtos em geral. 
+        Conheça mais sobre os nossos serviços!"></meta>
+      </Helmet>
       <MenuAppBar/>
       <MenuBarMobi />
       <section className="App">
@@ -62,7 +71,7 @@ class Servicos extends Component {
               </div>
             </section>
 
-            <section className="page-content__service">
+            <section className="page-content__service last">
               <div className="page-content__service__text">
                 <h1 className="titles">Rodobravo Fármacos</h1>
                 <span>
@@ -74,22 +83,16 @@ class Servicos extends Component {
                   planejamento e controle de rotas do <strong>Rodobravo Fármacos. </strong>
                   Através do rastreamento da frota e nossa central de controle verificamos o cumprimento das 
                   rotas planejadas, o status das entregas garantimos a segurança dos produtos
-                  e caso ocorra alguma adversidade durante o percurso podemos agir imediatamente. 
+                  e caso ocorra alguma adversidade durante o percurso podemos agir imediatamente.
+                  Faça uma <NavLink to='/contato'>cotação de frete</NavLink> conosco 
+                  agora mesmo, nos conte suas necessidades e utilize dos nossos serviços de qualidade tornando 
+                  sua vida mais simples.
                 </span>
               </div>
               <div className="page-content__service__foto">
                 <div id="service-item3"></div>
               </div>
             </section>
-
-            <div className="last">
-            <span>
-              Faça uma <NavLink to='/contato'>cotação de frete</NavLink> conosco 
-              agora mesmo, nos conte suas necessidades e utilize dos nossos serviços de qualidade tornando 
-              sua vida mais simples.
-            </span>
-            </div>
-
           </div>
         </div>
         <Footer/>

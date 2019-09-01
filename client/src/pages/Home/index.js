@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
-import MenuAppBar from '../../components/NavBarMenu'
-import MenuBarMobi from '../../components/NavBarMobi'
-import Footer from '../../components/Footer'
-import Partners from '../../components/Partners'
-import Slide from '../../components/Slide'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import mapa from "../../assets/imgs/rodobravo-atuacao3.png"
-import truck from "../../assets/imgs/delivery-truck.png"
-import frete from "../../assets/imgs/icon-frete3.png"
-import track from "../../assets/imgs/icon-monitoring.png"
-import { NavLink } from 'react-router-dom'
+import React, { Component } from 'react';
+import MenuAppBar from '../../components/NavBarMenu';
+import MenuBarMobi from '../../components/NavBarMobi';
+import Footer from '../../components/Footer';
+import Partners from '../../components/Partners';
+import Slide from '../../components/Slide';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import mapa from "../../assets/imgs/rodobravo-atuacao3.png";
+import truck from "../../assets/imgs/delivery-truck.png";
+import frete from "../../assets/imgs/icon-frete3.png";
+import track from "../../assets/imgs/icon-monitoring.png";
+import { NavLink } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 
 class Home extends Component {
@@ -24,6 +25,12 @@ class Home extends Component {
   render() {
     return (
     <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rodobravo Transportes</title>
+        <link rel="canonical" href="https://rodobravotransportes.com.br/" />
+        <meta name="description" content="Somos a Rodobravo Transportes, com mais de 17 anos de experiência no setor de transportes rodoviários, entendemos do seu negócio e fornecemos a solução que sua empresa precisa."></meta>
+      </Helmet>
       <MenuAppBar/>
       <MenuBarMobi />
       <section className="App">

@@ -6,6 +6,7 @@ import PageHeader from '../../components/PageHeader';
 import Media from "react-media";
 import GalleryTrucks from '../../components/GalleryTrucks';
 import { NavLink } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 
 class Frota extends Component {
@@ -17,6 +18,12 @@ class Frota extends Component {
   render() {
     return (
       <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rodobravo - Frota</title>
+        <link rel="canonical" href="https://rodobravotransportes.com.br/frota" />
+        <meta name="description" content="A Rodobravo Transportes investe constantemente na renovação da frota e em atualizações tecnológicas. Conheça um pouco mais sobre nossa frota e as opções que disponibilizamos aos nossos clientes."></meta>
+      </Helmet>
       <MenuAppBar/>
       <MenuBarMobi />
       <section className="App">

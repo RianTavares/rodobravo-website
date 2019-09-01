@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import MenuAppBar from '../../components/NavBarMenu'
-import MenuBarMobi from '../../components/NavBarMobi'
-import Footer from '../../components/Footer'
-import PageHeader from '../../components/PageHeader'
-import Media from "react-media"
+import MenuAppBar from '../../components/NavBarMenu';
+import MenuBarMobi from '../../components/NavBarMobi';
+import Footer from '../../components/Footer';
+import PageHeader from '../../components/PageHeader';
+import Media from "react-media";
+import {Helmet} from "react-helmet";
 
 class Rastreio extends Component {
 
@@ -14,6 +15,14 @@ class Rastreio extends Component {
   render() {
     return (
       <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rodobravo - Monitoramento</title>
+        <link rel="canonical" href="https://rodobravotransportes.com.br/rastreio" />
+        <meta name="description" content="Segurança é um dos fatores mais importantes na gestão dos processos de transferência de cargas, 
+          por isso a Rodobravo Transportes possuí sua frota rastreada com as melhores marcas do mercado e mantém 
+          um rigoroso e eficiente sistema com estrutura própria de monitoramento em tempo real dos veículos. Saiba mais!"></meta>
+      </Helmet>
       <MenuAppBar/>
       <MenuBarMobi />
       <section className="App">

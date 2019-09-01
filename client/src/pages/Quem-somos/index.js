@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import MenuAppBar from '../../components/NavBarMenu'
-import MenuBarMobi from '../../components/NavBarMobi'
-import Footer from '../../components/Footer'
-import PageHeader from '../../components/PageHeader'
+import MenuAppBar from '../../components/NavBarMenu';
+import MenuBarMobi from '../../components/NavBarMobi';
+import Footer from '../../components/Footer';
+import PageHeader from '../../components/PageHeader';
 import Media from "react-media";
+import {Helmet} from "react-helmet";
 
 class Rodobravo extends Component {
 
@@ -14,6 +15,14 @@ class Rodobravo extends Component {
   render() {
     return (
       <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rodobravo - Sobre Nós</title>
+        <link rel="canonical" href="https://rodobravotransportes.com.br/rodobravo" />
+        <meta name="description" content="A Rodobravo transportes foi constituída no início dos anos 2000 com um objetivo claro, 
+          ser essencial entregando com qualidade e tornando a vida de nossos clientes mais simples! 
+          Conheça mais sobre nossa história"></meta>
+      </Helmet>
       <MenuAppBar/>
       <MenuBarMobi />
       <section className="App">

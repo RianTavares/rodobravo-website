@@ -10,6 +10,10 @@ import slide3 from "../../assets/imgs/slide/rodobravo3.jpg";
 import slideMobi3 from "../../assets/imgs/slide/rodobravoMobi3.jpg";
 import slide4 from "../../assets/imgs/slide/rodobravo4.jpg";
 import slideMobi4 from "../../assets/imgs/slide/rodobravoMobi4.jpg";
+import slideRodo1 from "../../assets/imgs/slide/rodobravo-slide1.gif";
+import slideRodoMobi1 from "../../assets/imgs/slide/rodobravo-slideMobi1.gif";
+import slideRodo2 from "../../assets/imgs/slide/rodobravo-slide2.gif";
+import slideRodoMobi2 from "../../assets/imgs/slide/rodobravo-slideMobi2.gif";
 
 const SlideScreenSettings = () => {
    // eslint-disable-next-line
@@ -39,9 +43,9 @@ const SlideScreenSettings = () => {
               <Media query="(min-width: 975px)">
                 {matches =>
                   matches ? (
-                    <img src={slide1} alt='alegra'/>
+                    <img src={slideRodo1} alt='alegra'/>
                   ) : (
-                    <img src={slideMobi1} alt='alegra'/>
+                    <img src={slideRodoMobi1} alt='alegra'/>
                   )
                 }
               </Media>
@@ -56,9 +60,9 @@ const SlideScreenSettings = () => {
               <Media query="(min-width: 975px)">
                 {matches =>
                   matches ? (
-                    <img src={slide2} alt='alegra'/>
+                    <img src={slideRodo2} alt='alegra'/>
                   ) : (
-                    <img src={slideMobi2} alt='alegra'/>
+                    <img src={slideRodoMobi2} alt='alegra'/>
                   )
                 }
               </Media>

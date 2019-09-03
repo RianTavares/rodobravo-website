@@ -27,6 +27,14 @@ body{
         bottom: 0;
     }
 
+    .link-dev {
+        color: white;
+        text-decoration: none;
+    }
+    .link-dev:hover {
+        color: #777;
+    }
+
     &__social-icons {
         display: flex;
         flex-direction: row;
@@ -111,6 +119,12 @@ body{
 
         &__img {
             width: 143px;
+        }
+
+        button {
+            background: transparent;
+            outline: 0px auto -webkit-focus-ring-color;
+            border: none;
         }
     }
 

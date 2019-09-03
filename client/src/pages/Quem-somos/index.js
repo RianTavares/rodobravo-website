@@ -67,7 +67,7 @@ class Rodobravo extends Component {
             <span className="page-content__about-text">  
               Em meio a este cenário a história da <strong>Rodobravo</strong> começou com apenas um veículo, 
               o icônico e que estará para sempre nos corações de nossa empresa, VW 13.180. Após três anos, todo planejamento, 
-              investimentos e trabalho duro começaram a dar frutos e a partir do ano de <strong>2003</strong> passamos a contar 30 veículos próprios, 
+              investimentos e trabalho duro começaram a dar frutos e a partir do ano de <strong>2003</strong> passamos a contar com 30 veículos próprios, 
               atendendo agora às necessidades de cada cliente.
 
 
@@ -95,15 +95,17 @@ class Rodobravo extends Component {
               todos os produtos e serviços submetidos à vigilância sanitária, tais como medicamentos, 
               alimentos, cosméticos, saneantes, derivados do tabaco, produtos médicos, sangue, hemoderivados e serviços de saúde.
             </span>
+            <br />
+            <br />
 
-            <div className="page-content__about-foto">
+            {/* <div className="page-content__about-foto">
               <section className="page-content__about-foto__slide-gradiente">
                 <label>Nosso time de estratégia planejando operações</label>
               </section>
               <div className="about-us-foto" id="team">
 
               </div>
-            </div>
+            </div> */}
              <section className="last">
               <span className="page-content__about-text">  
                 O Tempo passou e nesses mais de 17 anos de experiência a <strong>Rodobravo Transportes</strong> continuou crescendo, investindo para mitigar os problemas do 

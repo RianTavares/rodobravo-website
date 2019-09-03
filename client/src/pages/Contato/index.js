@@ -7,6 +7,9 @@ import Media from "react-media";
 import SimpleMap from '../../components/Map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Form from '../../components/Form';
 import Alert from '../../components/Alert';
 import {Helmet} from "react-helmet";
@@ -41,17 +44,12 @@ class Contato extends Component {
         </Media>
         <div className="site-content">
           <div className="page-content">
-            <span>
+            {/* <span>
               Através dos nossos canais de comunicação vislumbramos facilitar o contato entre nós e todos os
               pontos crucias em nossas operações (clientes, prestadores de serviço, parceiros, etc).
               Utilize qualquer método abaixo para falar conosco e nos encontre também nas redes sociais.
-            </span>
+            </span> */}
 
-            <h1 className="titles">Nossa Matriz</h1>
-            <div className="page-content__google-map" style={{width: '100%', height: '400px'}}>
-              <SimpleMap/>
-            </div>
-            <p className="contact-adress">Rua Madre Maria José, 21 - Pavuna, Rio de Janeiro - RJ, 21535-230, Brasil</p>
             <div className="page-content__contact-card">
               <h1 className="titles">Atendimento</h1>
               <div >
@@ -65,8 +63,8 @@ class Contato extends Component {
               </div>
             </div>
           </div>
-        
-            <h1 className="titles">Fale Conosco</h1>
+
+          <h1 className="titles">Fale Conosco</h1>
             <span>
               preencha o formulário abaixo, 
               para realizar cotação de frete online, tirar suas dúvidas ou enviar críticas e sugestões.
@@ -74,6 +72,44 @@ class Contato extends Component {
             </span>
             <Alert />
             <Form />
+
+          <div className="page-content__contact-card">
+            <h1 className="titles">Trabalhe Conosco</h1>
+            <div >
+              <span>
+                Se procura oportunidades para fazer parte do time de profissionais da <strong>Rodobravo Transportes</strong>, acompanhe as nossas redes sociais
+                 clicando nos ícones abaixo:
+                
+              </span>
+            <div className="footer__social-icons page-icon">
+              <div className="footer__social-icons__facebook-icon">
+                <a href="https://www.facebook.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Facebook Rodobravo Transportes">
+                  <FontAwesomeIcon icon={faFacebookF} size="2x" />
+                </a>
+              </div>
+              <div className="footer__social-icons__instagram-icon">
+                <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
+                  <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </a>
+              </div>
+              <div className="footer__social-icons__linkedin-icon">
+                <a href="https://www.linkedin.com/company/rodobravo-transportes/" target="_blank" rel="noopener noreferrer" alt="Linkedin Rodobravo Transportes">
+                  <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+                </a>
+              </div>
+            </div>
+            <span>
+                Em nossas páginas do facebook, instagram e linkedin principalmente, publicamos as vagas abertas e os meios de se inscrever, além de 
+                inforamações sobre nosso dia a dia, promoções, sorteios e muito mais.
+              </span>
+          </div>
+        </div>
+
+        <h1 className="titles">Nossa Matriz</h1>
+        <div className="page-content__google-map" style={{width: '100%', height: '400px'}}>
+          <SimpleMap/>
+        </div>
+        <p className="contact-adress last">Rua Madre Maria José, 21 - Pavuna, Rio de Janeiro - RJ, 21535-230, Brasil</p>
             
         </div>
       </div>

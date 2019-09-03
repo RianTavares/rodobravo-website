@@ -165,7 +165,7 @@ class Form extends Component {
 
 
         return (
-            <form id="form" className="last" onSubmit={this.submitHandler}>
+            <form id="form" onSubmit={this.submitHandler}>
                 <TextField
                     value={userName}
                     name="userName"

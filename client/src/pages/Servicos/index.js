@@ -21,7 +21,7 @@ class Servicos extends Component {
         <title>Rodobravo - Serviços</title>
         <link rel="canonical" href="https://rodobravotransportes.com.br/servicos" />
         <meta name="description" content="A Rodobravo Transportes ofereçe serviços como Fretes completos, parciais, 
-        transferências secas e frigorificadas. Transportarmos produtos perecíveis, fármacos e outros produtos em geral. 
+        transferências secas e frigorificadas de cargas. Transportarmos produtos perecíveis, fármacos e outros produtos em geral. 
         Conheça mais sobre os nossos serviços!"></meta>
       </Helmet>
       <MenuAppBar/>
@@ -40,7 +40,7 @@ class Servicos extends Component {
           <div className="page-content">
             <section className="page-content__service">
               <div className="page-content__service__text">
-                <h1 className="titles">Rodobravo transferências</h1>
+                <h1 className="titles">Rodobravo Transferências</h1>
                 <span>
                 São mais de 17 anos de experiência em transporte rodoviário pelo Brasil, 
                 a <strong>Rodobravo Transportes</strong> entende do seu negócio e fornece a 
@@ -79,8 +79,8 @@ class Servicos extends Component {
                   com medicamentos, equipamentos cirúrgicos, vacinas, produtos médico-hospitalares, entre 
                   outros. A <strong>Rodobravo Fármacos</strong> oferece veículos adequados para esta modalidade de envio, 
                   como por exemplo no caso dos medicamentos, veículos refrigerados para controlar e evitar 
-                  variação de temperatura ao longo da viagem. Possuímos também um time focado no no 
-                  planejamento e controle de rotas do <strong>Rodobravo Fármacos. </strong>
+                  variação de temperatura ao longo da viagem. Possuímos também um time focado no 
+                  planejamento e controle de rotas da <strong>Rodobravo Fármacos. </strong>
                   Através do rastreamento da frota e nossa central de controle verificamos o cumprimento das 
                   rotas planejadas, o status das entregas garantimos a segurança dos produtos
                   e caso ocorra alguma adversidade durante o percurso podemos agir imediatamente.

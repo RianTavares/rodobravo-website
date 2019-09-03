@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
-import Logo from '../../assets/imgs/logo-site.png';
+import Logo from '../../assets/imgs/logo-web.png';
 import { NavLink } from 'react-router-dom';
 
 

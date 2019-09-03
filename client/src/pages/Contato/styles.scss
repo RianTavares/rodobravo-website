@@ -42,3 +42,13 @@
     font-size: 12px !important;
     font-weight: bold;
 }
+
+.page-icon {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around !important;
+
+    *  {
+        color: $ITENS_ORANGE_TWO !important;
+    }
+}

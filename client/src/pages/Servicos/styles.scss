@@ -14,6 +14,7 @@
 
             @media #{$BREAKPOINT-TABLET-LAND} {
                 display: flex;
+                justify-content: space-between;
             }
 
             &__text {
@@ -28,9 +29,13 @@
                 height: 210px;
                 background-color: transparent;
 
+                @media #{$BREAKPOINT-TABLET} {
+                    height: 500px;
+                }
+            
                 @media #{$BREAKPOINT-TABLET-LAND} {
                     height: 335px;
-                    width: 580px;
+                    width: 510px;
                 }
 
                 div {
@@ -43,9 +48,13 @@
                     height: 100%;
                     left: -20px;
 
+                    @media #{$BREAKPOINT-TABLET} {
+                        left: -15px;
+                    }
+
                     @media #{$BREAKPOINT-TABLET-LAND} {
                         width: 100%;
-                        left: -7px;
+                        left: unset;
                     }
                 }
 
@@ -59,6 +68,10 @@
 
                 #service-item3 {
                     background-image: url($SERVICE_3);
+
+                    @media #{$BREAKPOINT-TABLET-LAND} {
+                        height: 500px;
+                    }
                 }
             }
         }

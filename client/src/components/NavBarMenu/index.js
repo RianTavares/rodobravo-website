@@ -79,8 +79,10 @@ export default function HideAppBar(props) {
             </div>
 
               <div className="menu-logo">
-                <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />
-            </div>
+                <NavLink to='/' >
+                  <img className="menu-logo__logo" src={Logo} alt="Rodobravo Transportes Logo" />
+                </NavLink>
+              </div>
             <div className="menu-desk">
               <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/' activeClassName="underline">INÍCIO</NavLink>
               <NavLink onClick={keepScrolling} exact className='menu-desk__item' to='/rodobravo' activeClassName="underline">QUEM SOMOS</NavLink>

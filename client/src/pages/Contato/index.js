@@ -100,7 +100,7 @@ class Contato extends Component {
             </div>
             <span>
                 Em nossas páginas do facebook, instagram e linkedin principalmente, publicamos as vagas abertas e os meios de se inscrever, além de 
-                inforamações sobre nosso dia a dia, promoções, sorteios e muito mais.
+                informações sobre nosso dia a dia, promoções, sorteios e muito mais.
               </span>
           </div>
         </div>

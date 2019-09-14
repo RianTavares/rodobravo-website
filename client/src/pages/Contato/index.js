@@ -88,7 +88,7 @@ class Contato extends Component {
                 </a>
               </div>
               <div className="footer__social-icons__instagram-icon">
-                <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
+                <a href="https://www.instagram.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
                   <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>
               </div>

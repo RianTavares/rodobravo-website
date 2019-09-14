@@ -56,7 +56,7 @@ class Home extends Component {
                         <FontAwesomeIcon icon={faFacebookF} />
                     </div>
                   </a>
-                  <a href="https://www.instagram.com/rodobravo_transportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
+                  <a href="https://www.instagram.com/rodobravotransportes/" target="_blank" rel="noopener noreferrer" alt="Instagram Rodobravo Transportes">
                     <div className="page-content__top__item__contact__social__item">
                         <FontAwesomeIcon icon={faInstagram} />
                     </div>

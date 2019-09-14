@@ -19,7 +19,7 @@ Para facilitar o desenvolvimento disponibilizamos um link com o projeto modelado
 Acesse [clicando aqui](https://xd.adobe.com/spec/71c69104-f286-434a-76b7-3fddb211b752-07f7/)
 
 #### :)
-- Não esqueça de seguir a empresa no insta [@rodobravo_transportes](https://www.instagram.com/rodobravo_transportes/) :heart:
+- Não esqueça de seguir a empresa no insta [@rodobravotransportes](https://www.instagram.com/rodobravotransportes/) :heart:
 - E acesse o site para ver o resultado [Rodobravo](https://rodobravotransportes.com.br) 
 
 

@@ -8,6 +8,12 @@ import leader from "../../assets/imgs/partners/leader.png";
 import prix from "../../assets/imgs/partners/prix.png";
 import redeDor from "../../assets/imgs/partners/rede-dor.png";
 import itambe from "../../assets/imgs/partners/itambe.png";
+import disantini from "../../assets/imgs/partners/disantini2.png";
+import feiranova from "../../assets/imgs/partners/feira-nova-em-casa.png";
+import princesa from "../../assets/imgs/partners/princesa-supermercados.png";
+import gtfFoods from "../../assets/imgs/partners/gtffoods.png";
+import superpax from "../../assets/imgs/partners/superpax.png";
+
 
 const PartnersSlide = () => {
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
@@ -31,25 +37,40 @@ const PartnersSlide = () => {
         <div className="container">
           <Slider {...settings}>
             <div className="partners-logo">
-              <img src={assai} alt='alegra'/>
+              <img src={assai} alt='Atacadista Assaí'/>
             </div>
             <div className="partners-logo">
-              <img src={gpa} alt='extra'/>
+              <img src={gpa} alt='Grupo Pão de açúcar'/>
             </div>
             <div className="partners-logo">
-              <img src={prix} alt='assai'/>
+              <img src={prix} alt='Super Prix Supermercados'/>
             </div>
             <div className="partners-logo">
-              <img src={itambe} alt='leader'/>
+              <img src={itambe} alt='Itambé'/>
             </div>
             <div className="partners-logo">
-              <img src={casaVideo} alt='extra'/>
+              <img src={casaVideo} alt='Casa e Vídeo'/>
             </div>
             <div className="partners-logo">
-              <img src={leader} alt='assai'/>
+              <img src={leader} alt='Leader'/>
             </div>
             <div className="partners-logo">
-              <img src={redeDor} alt='leader'/>
+              <img src={redeDor} alt='Rede Dor São Luiz'/>
+            </div>
+            <div className="partners-logo">
+              <img src={disantini} alt='DiSantini'/>
+            </div>
+            <div className="partners-logo">
+              <img src={gtfFoods} alt='GTFoods'/>
+            </div>
+            <div className="partners-logo">
+              <img src={superpax} alt='SuperPax Rede Economia'/>
+            </div>
+            <div className="partners-logo">
+              <img src={princesa} alt='Princesa Supermercados'/>
+            </div>
+            <div className="partners-logo">
+              <img src={feiranova} alt='Feira Nova em Casa'/>
             </div>
           </Slider>
         </div>

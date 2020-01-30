@@ -73,7 +73,7 @@
                                 border-radius: 3px;
                                 border: none;
                                 margin: 20px auto;
-                                outline: 0px auto -webkit-focus-ring-color;
+                                outline: 0;
                             }
             
                             &__button:hover {
@@ -172,7 +172,7 @@
                             right: 0;
                             margin-left: auto;
                             margin-right: auto;
-                            outline: 0px auto -webkit-focus-ring-color;
+                            outline: 0;
                         }
 
                         &__button:hover {

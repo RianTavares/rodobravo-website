@@ -16,11 +16,11 @@ We started our design project thinking only on mobile template, following the co
 Clicking [HERE](https://xd.adobe.com/spec/71c69104-f286-434a-76b7-3fddb211b752-07f7/screen/c5c2e913-35f4-44c2-8317-2ea8faf9433d/Inicio-1/) you can see all the pages built using Adobe XD
 
 ## Live
- ~~The project is currently running on production enviroment and you can access here https://www.rodobravotransportes.com.br~~
+ ~~The project is currently running on production enviroment and you can access here [https://www.rodobravotransportes.com.br](#)~~
 
  __UPDATE__: This project is no longer available at the main domain because the company is now part of another bigger company and is using another portal built by someone else.
 
-With the purpose to share what was built by me and used by Rodobravo as the main portal from 2018 to 2020, I deployed the application at another domain. You can access clicking here: [https://staging-rodobravo-web.herokuapp.com/](https://staging-rodobravo-web.herokuapp.com/)
+With the purpose to share what was built by me and used by Rodobravo as the main portal from 2018 to 2020, I deployed the application at another domain. You can access clicking here: [https://master.d6gkm7msjpci8.amplifyapp.com/](https://master.d6gkm7msjpci8.amplifyapp.com/)
 
 
 ## Instagram
@@ -29,6 +29,6 @@ You can see clicking [Here](https://www.instagram.com/rodobravotransportes/)
 
 #### :)
 - if you enjoyed about this project add a star :star: 
-- Don't forget to follow me on Instagram [@riantavareson](https://www.instagram.com/riantavareson/) :heart:
+- Don't forget to follow me on Instagram [@riantavares.dev](https://www.instagram.com/riantavares.dev/) :heart:
 - And follow me also here on [github](https://github.com/RianTavares) :)
 
